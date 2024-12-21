@@ -3,7 +3,7 @@ import Footer from './screen/Footer'
 
 const App = () => {
   return (
-    <div>
+    <div className='flex items-center justify-center' >
       <Footer/>
     </div>
   )
