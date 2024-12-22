@@ -91,8 +91,6 @@ const AccordionsFooter = () => {
       </span>
     ))}
   </section>
-
-  {/* Section untuk efek blur */}
   <section
     className={`h-[60px] absolute w-full bottom-0 ${
       isExpanded
@@ -101,8 +99,6 @@ const AccordionsFooter = () => {
     } transition-all duration-500`}
   >
   </section>
-
-  {/* Tombol Show More / Show Less */}
   <button
     onClick={toggleText}
     className="mt-2 text-xs z-50 py-2 absolute -bottom-10  transform text-blue-500 transition-all"
@@ -110,8 +106,6 @@ const AccordionsFooter = () => {
     {isExpanded ? 'Show Less' : 'Show More'}
   </button>
 </section>
-
-  
   )
 }
 

@@ -1,7 +1,8 @@
-export const footerId = 'src/assets/IdCloudFooterakreditasi-partner-1.png'
-export const footerBsi1 = 'src/assets/idCloudFooterBsi-27001.png'
-export const footerBsi2 = 'src/assets/idCloudFoter-9001.png'
-export const footerKominfo = 'src/assets/IdCloudFooterPseKominfo.png'
+export const footerId = 'src/assets/footer/IdCloudFooterakreditasi-partner-1.png'
+export const footerBsi1 = 'src/assets/footer/idCloudFoter-9001.png'
+export const footerBsi2 = 'src/assets/footer/idCloudFoter-9001.png'
+export const footerKominfo = 'src/assets/footer/IdCloudFooterPseKominfo.png'
+export const payment = 'src/assets/footer/Screenshot 2024-12-21 at 16.27.30.png'
 
 // navbar
 export const logoIdCloud = 'src/assets/navbar/logo-idcloud.svg'
@@ -16,6 +17,13 @@ export const kubernetes = 'src/assets/navbar/kubernetes.webp'
 export const colocation = 'src/assets/navbar/colocation.webp'
 export const cyberpanel = 'src/assets/navbar/cyberpanel.webp'
 
+
 // angga
 // section 1
 export const bannerPromo = 'src/assets/angga/section1/banner-promo-yesid.webp'
+
+// feturedCostummer 
+export const costumers1 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.00.55.png'
+export const costumers2 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.01.20.png'
+export const costumers3 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.02.00.png'
+
