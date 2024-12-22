@@ -6,7 +6,7 @@ import MenuItemProduct from './MenuItemProduct';
 const ProductCard = () => {
   return (
     <div className="absolute hidden group-hover:block w-screen max-w-[1200px] -left-96 h-screen max-h-[600px]top-full pt-4 rounded-lg">
-      <div className="w-full h-[64%] bg-white rounded-lg shadow-lg grid grid-cols-4 gap-6 text-gray-700">
+      <div className="w-full h-[65%] bg-white rounded-lg shadow-lg grid grid-cols-4 gap-6 text-gray-700">
         <div className='bg-slate-100 w-full h-full p-6 rounded-tl-lg'>
           <h3 className=" text-black mb-4 border-l-2 border-blue-500 pl-2">FEATURED PRODUCTS</h3>
           <div className="space-y-4 group">
