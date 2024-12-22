@@ -9,9 +9,6 @@ footer p {
   footer p br {
     margin-bottom: 4px; /* Atur jarak antar baris */
   }
+ 
   
-  /* CSS untuk mengatur jarak antar baris */
-br {
-    line-height: 1.2; /* Mengurangi jarak antar baris */
-  }
   

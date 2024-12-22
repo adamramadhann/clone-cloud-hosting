@@ -7,12 +7,11 @@ import LayoutScreen from '../component/LayoutScreen';
 
 const Footer = () => {
   const imageCopyRigth = [
-    { urlImage: footerBsi1 },
-    { urlImage: footerBsi1 },
-    { urlImage: footerKominfo },
-    { urlImage: footerId },
+    {   urlImage: footerBsi1 },
+    {   urlImage: footerBsi1 },
+    {   urlImage: footerKominfo },
+    {   urlImage: footerId },
   ];
-
 
   const icon = [
     {
@@ -32,66 +31,70 @@ const Footer = () => {
     },
   ]
 
+  const dataMenuFooter = [
+    {
+      judul: 'Service',
+      menus: ['Cloud VPS', 'Server VPS', 'Cloud Hosting', 'Dedicated Server', 'Layanan Lainnya'],
+    },
+    {
+      judul: 'Company',
+      menus: ['Tentang Perusahaan', 'Afiliasi', 'Tanya Jawab', 'Ketentuan Layanan', 'Request Penawaran'],
+    },
+    {
+      judul: 'Links',
+      menus: ['Pembayaran', 'Status Server', 'Promo', 'Panduan', 'Blog'],
+    },
+  ]
+
 
 
   return (
     <LayoutScreen>
-
-    <footer className="w-full h-full ">
+    <footer className="w-full mb-10 h-full ">
       <AccordionsFooter/>
       <section className='flex w-full' >
           <section className=' mr-20 ' >
-              <h1 className='text-xl font-semibold' >About IDCloudHost</h1>
-              <p className='text-justify mt-3  text-gray-400 text-lg leading-8 w-[700px] ' >IDCloudHost (PT Cloud Hosting Indonesia) adalah penyedia layanan Web Hosting Provider berbasis SSD Cloud Hosting yang mempunyai tujuan untuk selalu menjaga website tetap hidup dan cepat di akses dari berbagai negara. Saat ini tersedia Beberapa Data Center Utama yang dapat Anda gunakan dengan berlangganan menggunakan layanan Kami. </p>
-              <h1 className='text-lg mt-10 font-semibold' >IDCloudHost is also Available in Singapore</h1>
+              <h1 className='text-xl font-semibold mt-5 ' >About IDCloudHost</h1>
+              <p className='text-justify mt-3  text-gray-400 text-sm leading-8 w-[600px] ' >IDCloudHost (PT Cloud Hosting Indonesia) adalah penyedia layanan Web Hosting Provider berbasis SSD Cloud Hosting yang mempunyai tujuan untuk selalu menjaga website tetap hidup dan cepat di akses dari berbagai negara. Saat ini tersedia Beberapa Data Center Utama yang dapat Anda gunakan dengan berlangganan menggunakan layanan Kami. </p>
+              <h1 className='text-sm mt-10 font-semibold' >IDCloudHost is also Available in Singapore</h1>
               <section className='flex gap-4' >
                   {
                     icon.map((val) => (
-                      <span  key={val.icon} className='w-8 h-8 mt-3 rounded-full flex items-center justify-center bg-gray-400 text-white' >
+                      <span  key={val.icon} className='w-8 h-8 cursor-pointer mt-3 rounded-full flex items-center justify-center bg-gray-400 text-white' >
                         <a href="#">{val.icon}</a>
                       </span>
                     ))
                   }
               </section>
-              <p className='text-gray-400 mt-3 ' >Tim Support Kami siap membantu anda selama 24 jam. Hubungi <a className='text-blue-500' >Tim Support</a></p>
+              <p className='text-gray-400 mt-3  text-sm' >Tim Support Kami siap membantu anda selama 24 jam. Hubungi <a className='text-blue-500 cursor-pointer ' >Tim Support</a></p>
           </section>
-         <section className='flex w-full text-xl text-gray-400 gap-20' > 
-         <ul className='flex-1 flex flex-col gap-3 text-lg' >
-            <li className='text-black' >servive</li>
-            <li>Cloud VPS</li>
-            <li>Server VPS</li>
-            <li>Cloud Hosting</li>
-            <li>Dedicated Server</li>
-            <li>Layanan Lainnya</li>
+         <section className='flex w-full text-sm text-gray-400 gap-14' > 
+         {
+          dataMenuFooter.map((val) => (
+            <ul key={val.judul} className='flex-1 flex flex-col gap-3 text-sm' >
+            <li className='text-black' >{val.judul}</li>
+            {
+              val.menus.map((e) => (
+                <li key={e} className='gap-5 ' >
+                  <a href="" className='hover:text-blue-500 text-sm' >{e}</a>
+                </li>
+              ))
+            }
           </ul>
-         <ul className='flex-1 flex flex-col gap-3 text-lg' >
-            <li>servive</li>
-            <li>Cloud VPS</li>
-            <li>Server VPS</li>
-            <li>Cloud Hosting</li>
-            <li>Dedicated Server</li>
-            <li>Layanan Lainnya</li>
-          </ul>
-         <ul className='flex-1 flex flex-col gap-3 text-lg' >
-            <li className='' >servive</li>
-            <li>Cloud VPS</li>
-            <li>Server VPS</li>
-            <li>Cloud Hosting</li>
-            <li>Dedicated Server</li>
-            <li>Layanan Lainnya</li>
-          </ul>
+          ))
+         }
          </section>
       </section>
 
-      <h1 className='text-lg font-bold mt-5 mb-2 ' >Accepted Payment Method</h1>
+      <h1 className='text-sm font-bold mt-5 mb-2 ' >Accepted Payment Method</h1>
       <img src="src/assets/Screenshot 2024-12-21 at 16.27.30.png" className='w-[1000px]' alt="" />
 
-      <section className=" mx-auto flex mt-3 items-center justify-between">
-        <p className="text-gray-600 text-lg text-center ">
+      <section className=" mx-auto flex mt-10 items-center justify-between">
+        <p className="text-gray-600 text-sm text-center ">
           2015 - 2024 © PT Cloud Hosting Indonesia
         </p>
-        <section className="flex items-center mt-4 gap-4">
-          <h2 className="text-gray-800 text-lg font-semibold">
+        <section className="flex items-center  gap-4">
+          <h2 className="text-gray-800 text-sm font-semibold">
             AKREDITASI & PARTNER
           </h2>
           <div className="flex items-center gap-4">
@@ -100,7 +103,7 @@ const Footer = () => {
                 key={index}
                 src={val.urlImage}
                 alt="Footer Accreditation or Partner Logo"
-                className="w-28 h-12 object-contain"
+                className="w-22 h-10 object-contain"
               />
             ))}
           </div>
