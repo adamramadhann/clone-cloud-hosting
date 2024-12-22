@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { footerBsi1, footerId, footerKominfo } from '../importGambar';
+import { footerBsi1, footerBsi2, footerId, footerKominfo, payment } from '../importGambar';
 import { FaFacebook, FaLinkedinIn, FaPinterestP, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
-import AccordionsFooter from '../components/AccordionsFooter';
 import LayoutScreen from '../components/LayoutScreen';
+import AccordionsFooter from '../components/adam/AccordionsFooter';
 
 const Footer = () => {
   const imageCopyRigth = [
     {   urlImage: footerBsi1 },
-    {   urlImage: footerBsi1 },
+    {   urlImage: footerBsi2 },
     {   urlImage: footerKominfo },
     {   urlImage: footerId },
   ];
@@ -25,6 +25,9 @@ const Footer = () => {
     },
     {
       icon : <FaYoutube size={15} />
+    },
+    {
+      icon : <FaTwitter size={15} />
     },
     {
       icon : <FaPinterestP size={15} />
@@ -45,6 +48,8 @@ const Footer = () => {
       menus: ['Pembayaran', 'Status Server', 'Promo', 'Panduan', 'Blog'],
     },
   ]
+
+  console.log(imageCopyRigth)
 
 
 
@@ -71,7 +76,7 @@ const Footer = () => {
          <section className='flex w-full text-sm text-gray-400 gap-14' > 
          {
           dataMenuFooter.map((val) => (
-            <ul key={val.judul} className='flex-1 flex flex-col gap-3 text-sm' >
+            <ul key={val.judul} className='flex-1 flex flex-col gap-6 text-sm' >
             <li className='text-black' >{val.judul}</li>
             {
               val.menus.map((e) => (
@@ -86,8 +91,8 @@ const Footer = () => {
          </section>
       </section>
 
-      <h1 className='text-sm font-bold mt-5 mb-2 ' >Accepted Payment Method</h1>
-      <img src="src/assets/Screenshot 2024-12-21 at 16.27.30.png" className='w-[1000px]' alt="" />
+      <h1 className='text-sm font-bold mt-8 mb-2 ' >Accepted Payment Method</h1>
+      <img src={payment} className='w-[1000px] mb-28 ' alt="" />
 
       <section className=" mx-auto flex mt-10 items-center justify-between">
         <p className="text-gray-600 text-sm text-center ">
