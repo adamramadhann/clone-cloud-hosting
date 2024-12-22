@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { footerBsi1, footerId, footerKominfo } from '../importGambar';
 import { FaFacebook, FaLinkedinIn, FaPinterestP, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
-import AccordionsFooter from '../component/AccordionsFooter';
-import LayoutScreen from '../component/LayoutScreen';
+import AccordionsFooter from '../components/AccordionsFooter';
+import LayoutScreen from '../components/LayoutScreen';
 
 const Footer = () => {
   const imageCopyRigth = [
