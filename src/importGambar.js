@@ -17,7 +17,13 @@ export const kubernetes = 'src/assets/navbar/kubernetes.webp'
 export const colocation = 'src/assets/navbar/colocation.webp'
 export const cyberpanel = 'src/assets/navbar/cyberpanel.webp'
 
+
+// angga
+// section 1
+export const bannerPromo = 'src/assets/angga/section1/banner-promo-yesid.webp'
+
 // feturedCostummer 
 export const costumers1 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.00.55.png'
 export const costumers2 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.01.20.png'
 export const costumers3 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.02.00.png'
+

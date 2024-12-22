@@ -5,6 +5,7 @@ import FeaturedCustomer from '../components/adam/FeaturedCstmr/FeaturedCustomer'
 import BuildForBusines from '../components/adam/buildForBusines/BuildForBusines';
 import ControlPanelApi from '../components/adam/controlPanelApi/ControlPanelApi';
 
+
 const InsightsResourcesScreen = () => {
   // State to track the active section
   const [activeSection, setActiveSection] = useState('');
