@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from './screen/Footer'
-import InsightRecources from './component/InsightRecources'
 import InsightsResourcesScreen from './screen/InsightsResourcesScreen'
 
 const App = () => {
