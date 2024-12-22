@@ -5,6 +5,7 @@ import FeaturedCustomer from '../components/adam/FeaturedCstmr/FeaturedCustomer'
 import BuildForBusines from '../components/adam/buildForBusines/BuildForBusines';
 import ControlPanelApi from '../components/adam/controlPanelApi/ControlPanelApi';
 
+
 const sections = [
   { id: 'controlPanelApi', label: 'CONTROL PANEL API & API', component: <ControlPanelApi /> },
   { id: 'buildForBusines', label: 'BUILD FOR BUSINESS', component: <BuildForBusines /> },

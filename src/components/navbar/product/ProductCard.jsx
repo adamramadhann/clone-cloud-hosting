@@ -5,10 +5,10 @@ import MenuItemProduct from './MenuItemProduct';
 
 const ProductCard = () => {
   return (
-    <div className="absolute hidden group-hover:block w-screen max-w-6xl -left-96 top-full pt-4 rounded-lg">
-      <div className="w-full h-full bg-white rounded-lg shadow-lg grid grid-cols-4 gap-6 text-gray-700">
+    <div className="absolute hidden group-hover:block w-screen max-w-[1200px] -left-96 h-screen max-h-[600px]top-full pt-4 rounded-lg">
+      <div className="w-full h-[64%] bg-white rounded-lg shadow-lg grid grid-cols-4 gap-6 text-gray-700">
         <div className='bg-slate-100 w-full h-full p-6 rounded-tl-lg'>
-          <h3 className="font-semibold text-black mb-4 border-l-2 border-blue-500 pl-2">FEATURED PRODUCTS</h3>
+          <h3 className=" text-black mb-4 border-l-2 border-blue-500 pl-2">FEATURED PRODUCTS</h3>
           <div className="space-y-4 group">
             <ProductItem
               title="Cloud VPS"
@@ -79,7 +79,7 @@ const ProductCard = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex justify-evenly items-center gap-3 py-5 px-8 rounded-b-lg bg-gradient-to-r from-cyan-300 to-blue-500">
+      <div className="flex flex-1 justify-evenly items-center gap-3 py-5 px-8 rounded-b-lg bg-gradient-to-r from-cyan-300 to-blue-500">
         <h1 className='w-[18%] text-wrap capitalize text-4xl text-white'>request penawaran</h1>
         <p className='w-[65%] text-sm text-wrap text-white'>Anda Membutuhkan spesifikasi server custom untuk kebutuhan Anda ? Silakan mengajukan formulir request penawaran server Custom yang akan dibantu oleh tim IDCloudhost. Konsultasi GRATIS!</p>
         <button className='flex flex-1 justify-center items-center bg-white/20  px-4 py-2 rounded-lg font-medium border border-white/40 uppercase'>selengkapnya</button>
