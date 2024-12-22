@@ -152,7 +152,7 @@ const images = [
 
 const ImageSelector = ({ selectedImage, onSelect }) => {
   return (
-    <div className="w-full max-w-96 h-36 grid grid-cols-7 gap-3 py-4 px-6 bg-white rounded-lg border border-gray-200 overflow-y-auto no-scrollbar mb-6">
+    <div className="w-full max-w-[900px] h-56 grid grid-cols-7 gap-3 py-4 px-6 bg-white border border-gray-200 overflow-y-auto no-scrollbar mb-6">
       {images.map(({ id, Icon }) => (
         <button
           key={id}
