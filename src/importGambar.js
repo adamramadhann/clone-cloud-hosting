@@ -15,3 +15,7 @@ export const objectStorage = 'src/assets/navbar/is3.webp'
 export const kubernetes = 'src/assets/navbar/kubernetes.webp'
 export const colocation = 'src/assets/navbar/colocation.webp'
 export const cyberpanel = 'src/assets/navbar/cyberpanel.webp'
+
+// angga
+// section 1
+export const bannerPromo = 'src/assets/angga/section1/banner-promo-yesid.webp'

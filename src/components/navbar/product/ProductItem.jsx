@@ -10,7 +10,7 @@ const ProductItem = ({ title, description }) => {
             {title === "Server VPS" && <img src={serverVps} alt="" className='w-7 h-6' />}
             {title === "Bare Metal Server" && <img src={bareMetal} alt="" className='w-7 h-6' />}
             {title === "Backup as a Service" && <img src={backup} alt="" className='w-6 h-6' />}
-            <h4 className="font-medium">{title}</h4>
+            <h4 className="font-base">{title}</h4>
         </div>
       <p className="text-sm text-gray-500">{description}</p>
     </div>

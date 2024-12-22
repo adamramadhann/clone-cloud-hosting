@@ -5,16 +5,16 @@ import ProductCard from './product/ProductCard';
 import NavbarCard from './card navbar/NavbarCard';
 import LayoutScreen from '../LayoutScreen';
 
-const Navbar = () => {
+const Navbar = ({ styling }) => {
   return (
     <LayoutScreen>
-        <nav className="w-full h-20 bg-[#3093FB] text-white flex justify-center ">
-            <div className="max-w-screen-2xl h-full flex items-center justify-between gap-36">
+        <nav className={`w-full h-20 text-white flex justify-center ${styling}`}>
+            <div className="max-w-screen-2xl h-full flex items-center justify-between gap-64">
             <div className="flex items-center">
-                <img src={logoIdCloud} alt="logo" />
+                <img src={logoIdCloud} alt="logo" className='w-64 h-64' />
             </div>
             
-            <div className="flex space-x-8 font-medium text-base">
+            <div className="flex space-x-11 font-medium text-base">
                 <div className="group relative">
                     <button className="flex items-center group-hover:text-blue-200 group-hover:underline group-focus:underline underline-offset-[16px] decoration-2">
                         Produk
@@ -49,7 +49,6 @@ const Navbar = () => {
                         Promo
                     </button>
                 </div>
-            
             </div>
 
             <div className='group relative'>
@@ -58,7 +57,7 @@ const Navbar = () => {
                     <IoChevronDown />
                 </button>
 
-                <div className="w-44 h-52 hidden group-hover:block bg-white fixed top-[65px] right-[390px] shadow-md text-zinc-500 text-base ">
+                <div className="w-44 h-52 hidden group-hover:block bg-white fixed top-[68px] -right-[25px] shadow-md text-zinc-500 text-base ">
                     <div className="w-full h-full flex flex-col items-start justify-evenly py-2 px-6 gap-5">
                         <a href="#" className='hover:underline underline-offset-4 decoration-[#3093FB] decoration-2'>
                             Client Area
