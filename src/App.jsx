@@ -1,12 +1,13 @@
 import React from 'react'
 import Footer from './screen/Footer'
-import Navbar from './components/navbar/Navbar'
+import InsightRecources from './component/InsightRecources'
+import InsightsResourcesScreen from './screen/InsightsResourcesScreen'
 
 const App = () => {
   return (
-    <div className='flex items-center justify-center' >
-      {/* <Footer/> */}
-      <Navbar/>
+    <div className='flex flex-col justify-center items-ceter w-full  ' >
+        <InsightsResourcesScreen/>
+        <Footer/>
     </div>
   )
 }
