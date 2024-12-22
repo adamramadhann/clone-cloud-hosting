@@ -1,10 +1,10 @@
 import React from 'react'
-import LayoutScreen from '../component/LayoutScreen'
-import InsightRecources from '../component/InsightRecources'
+import LayoutScreen from '../components/LayoutScreen'
 import { CiSquareQuestion } from 'react-icons/ci'
 import { GrServerCluster } from 'react-icons/gr'
 import { FaCode } from 'react-icons/fa'
 import { PiBookBold } from 'react-icons/pi'
+import InsightRecources from '../components/InsightRecources'
 
 const InsightsResourcesScreen = () => {
     const iconMenu = [
