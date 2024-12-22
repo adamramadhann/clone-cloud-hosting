@@ -5,9 +5,8 @@ import FeaturedCustomer from '../components/adam/FeaturedCstmr/FeaturedCustomer'
 import BuildForBusines from '../components/adam/buildForBusines/BuildForBusines';
 import ControlPanelApi from '../components/adam/controlPanelApi/ControlPanelApi';
 
-
 const sections = [
-  { id: 'controlPanelApi', label: 'CONTROL PANEL API & API', component: <ControlPanelApi /> },
+  { id: 'controlPanel', label: 'CONTROL PANEL & API', component: <ControlPanelApi /> },
   { id: 'buildForBusines', label: 'BUILD FOR BUSINESS', component: <BuildForBusines /> },
   { id: 'featuredCustomer', label: 'FEATURED CUSTOMER', component: <FeaturedCustomer /> },
   { id: 'insightRecources', label: 'INSIGHT & RESOURCES', component: (
@@ -20,55 +19,107 @@ const sections = [
 
 const InsightsResourcesScreen = () => {
   const [activeSection, setActiveSection] = useState('');
-
-  const handleScroll = () => {
-    const sections = document.querySelectorAll('.section');
-    let currentSection = '';
-
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const sectionHeight = section.offsetHeight;
-
-      if (sectionTop <= window.innerHeight / 2 && sectionTop + sectionHeight > window.innerHeight / 2) {
-        currentSection = section.id;
-      }
-    });
-
-    setActiveSection(currentSection);
-  };
+  const [isSticky, setIsSticky] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const navbar = document.getElementById('sticky-nav');
+    const navbarTop = navbar.offsetTop;
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      // Update scroll state
+      setHasScrolled(window.scrollY > 0);
+      
+      // Handle sticky state
+      setIsSticky(window.scrollY > navbarTop);
+
+      // Handle active section
+      const scrollPosition = window.scrollY + window.innerHeight / 3; // Adjusted trigger point
+      let currentSection = '';
+      
+      // Find the current section based on scroll position
+      for (const section of sections) {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const absoluteTop = window.scrollY + rect.top;
+          
+          if (scrollPosition >= absoluteTop && 
+              scrollPosition < absoluteTop + element.offsetHeight) {
+            currentSection = section.id;
+            break;
+          }
+        }
+      }
+
+      // Only set active section if we've scrolled or if it's not the control panel
+      if (hasScrolled || currentSection !== 'controlPanel') {
+        setActiveSection(currentSection);
+      } else {
+        setActiveSection('');
+      }
     };
-  }, []);
 
-  console.info(activeSection);
+    window.addEventListener('scroll', handleScroll);
+    
+    // Initial check without setting active section for control panel
+    setIsSticky(window.scrollY > navbarTop);
+    setHasScrolled(window.scrollY > 0);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [hasScrolled]);
 
   return (
-    <div className="w-full h-auto flex flex-col mt-40">
-      {/* Sticky Navigation Bar */}
-      <div className="flex items-center justify-center gap-16 bg-white sticky top-0 z-50 h-auto py-3 px-6">
-        {sections.map((section) => (
-          <a
-            key={section.id}
-            href={`#${section.id}`}
-            className={`text-gray-800 hover:text-blue-500 text-xl ${activeSection === section.id ? 'text-white rounded-full px-3 py-2 bg-gradient-to-tr from-[#FDA14D] to-[#FD4DF6]' : ''}`}
-          >
-            {section.label}
-          </a>
-        ))}
+    <>
+      {/* Fixed height spacer */}
+      <div className="h-16"/>
+      
+      {/* Navigation */}
+      <div 
+        id="sticky-nav"
+        className={`${
+          isSticky 
+            ? 'fixed top-0 left-0 right-0 shadow-lg' 
+            : 'relative'
+        } bg-white z-50 transition-shadow duration-200`}
+      >
+        <div className="flex items-center justify-center gap-16 py-4">
+          {sections.map((section) => (
+            <a
+              key={section.id}
+              href={`#${section.id}`}
+              className={`text-gray-800 hover:text-white hover:rounded-full hover:px-3 hover:py-2 hover:bg-gradient-to-tr from-[#FDA14D] to-[#FD4DF6] font-semibold text-lg tracking-wider transition-all duration-300 ${
+                activeSection === section.id 
+                  ? 'text-white rounded-full px-3 py-2 bg-gradient-to-tr from-[#FDA14D] to-[#FD4DF6]' 
+                  : ''
+              }`}
+              onClick={() => {
+                // When clicking a link, immediately set it as active
+                // unless it's Control Panel API and we haven't scrolled
+                if (section.id !== 'controlPanel' || hasScrolled) {
+                  setActiveSection(section.id);
+                }
+              }}
+            >
+              {section.label}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Sections */}
-      {sections.map((section) => (
-        <div key={section.id} id={section.id} className="section">
-          {section.component}
-        </div>
-      ))}
-    </div>
+      <div className="w-full -mt-56">
+        {sections.map((section) => (
+          <div 
+            key={section.id}
+            id={section.id}
+            className="section w-full py-20"
+          >
+            {section.component}
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

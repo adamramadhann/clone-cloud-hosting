@@ -4,11 +4,11 @@ import LayoutScreen from '../../components/LayoutScreen'
 import { FaCircleCheck } from 'react-icons/fa6'
 import Card from '../../components/angga/section1/Card'
 
-const MainSection = () => {
+const MainSection = ({ styling }) => {
   return (
     <LayoutScreen>
-        <div className='bg-transparent w-full mt-2 h-full flex flex-col items-center absolute z-40 top-24'>
-            <img src={bannerPromo} alt="banner" className='  cursor-pointer'/>
+        <div className={`bg-transparent w-full mt-2 h-full flex flex-col items-center absolute z-40 top-24 ${styling} `}>
+            <img src={bannerPromo} alt="banner" className='cursor-pointer'/>
             <div className="max-w-[1300px] h-full flex items-start mt-6">
                 <div className="w-1/2 flex flex-col items-start gap-4 text-white">
                     <h1 className='w-full text-[61px] tracking-wider leading-snug font-bold text-wrap'>Kemudahan Layanan Server Terjangkau & Fleksibel</h1>

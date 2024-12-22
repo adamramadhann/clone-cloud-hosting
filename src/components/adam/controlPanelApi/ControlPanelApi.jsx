@@ -22,8 +22,8 @@ const BuildForBusines = () => {
 
   return (
     <LayoutScreen>
-           <section className='mx-10' >
-           <section className=' text-white  py-20 bg-[#101F43] w-full h-auto mb-40 rounded-lg flex justify-center items-center relative  ' >
+           <section className='mx-28' >
+           <section className=' text-white  py-20 bg-[#101F43] w-full h-auto mb-40 rounded-3xl flex justify-center items-center relative  ' >
                 <div className=' flex flex-col ' >
                     <h1 className='text-[2.5rem] mb-10 leading-[50px] text-[#64686e]'  >Powerfull Control <br /> Panel& API </h1>
                     <div className='flex  w-full items-center justify-center ' >

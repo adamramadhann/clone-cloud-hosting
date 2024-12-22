@@ -16,7 +16,7 @@ const Slider = ({ label, value, unit, min, max, step, onChange }) => {
         <span className="text-gray-700 font-semibold text-lg">{label}</span>
       </div>
       <div className="flex items-center gap-8">
-        <input type="range" value={value} min={min} max={max} step={step} onChange={(e) => onChange(e.target.value)} className="w-[410px] h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer pr-2" />
+        <input type="range" value={value} min={min} max={max} step={step} onChange={(e) => onChange(e.target.value)} className="w-[410px] h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer ml-2" />
         {/* <div className="flex-1 h-2 bg-gray-200 rounded-full">
           <div
             className="h-full bg-blue-500 rounded-full"

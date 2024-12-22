@@ -8,7 +8,7 @@ import LayoutScreen from '../LayoutScreen';
 const Navbar = ({ styling }) => {
   return (
     <LayoutScreen>
-        <nav className={`w-full h-20 text-white flex justify-center ${styling}`}>
+        <nav className={`w-full h-20 text-white flex justify-center fixed ${styling}`}>
             <div className="max-w-screen-2xl h-full flex items-center justify-between gap-60">
             <div className="flex items-center">
                 <img src={logoIdCloud} alt="logo" className='w-44' />
