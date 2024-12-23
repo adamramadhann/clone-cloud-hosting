@@ -53,6 +53,24 @@ export const pertamina = 'src/assets/featuredCostumers/pertamina.webp'
 // section 1
 export const bannerPromo = 'src/assets/angga/section1/banner-promo-yesid.webp'
 
+// imageselector
+export const wordpressSec1 = 'src/assets/angga/section1/image-selector/wordpress.webp'
+export const moodleSec1 = 'src/assets/angga/section1/image-selector/moodle.webp'
+export const dockerSec1 = 'src/assets/angga/section1/image-selector/docker.webp'
+export const nodejsSec1 = 'src/assets/angga/section1/image-selector/nodejs.webp'
+export const sisterSec1 = 'src/assets/angga/section1/image-selector/sister.webp'
+export const cyberpanelSec1 = 'src/assets/angga/section1/image-selector/cyberpanel1.webp'
+export const cpanelSec1 = 'src/assets/angga/section1/image-selector/cpanel.webp'
+export const pleskSec1 = 'src/assets/angga/section1/image-selector/plesk.webp'
+export const mailcoachSec1 = 'src/assets/angga/section1/image-selector/mailcoach1.webp'
+export const dapodikSec1 = 'src/assets/angga/section1/image-selector/dapodik.webp'
+export const mariadbSec1 = 'src/assets/angga/section1/image-selector/mariadb.webp'
+export const webuzoSec1 = 'src/assets/angga/section1/image-selector/webuzo.webp'
+export const mikrotikSec1 = 'src/assets/angga/section1/image-selector/mikrotik.webp'
+export const haproxySec1 = 'src/assets/angga/section1/image-selector/haproxy.webp'
+export const postgresqlSec1 = 'src/assets/angga/section1/image-selector/postgresql.webp'
+export const aapanelSec1 = 'src/assets/angga/section1/image-selector/aapanel.webp'
+
 // section 2
 export const product1 = 'src/assets/angga/section2/product-1.webp'
 export const product2 = 'src/assets/angga/section2/product-2.webp'

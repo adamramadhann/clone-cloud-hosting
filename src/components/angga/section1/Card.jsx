@@ -17,7 +17,7 @@ const Card = () => {
     }, [cpu, ram, storage]);
 
   return (
-    <div className="h-[980px] bg-trannsparent flex flex-col items-center absolute z-40 top-28 right-[310px] mt-2">
+    <div className="h-[980px] bg-trannsparent flex flex-col items-center absolute z-40 top-0 right-[10px] mt-2">
         <div className="max-w-[655px] h-full mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="w-full h-full py-20 px-20">
                 <div className="flex justify-evenly items-center mb-8">
