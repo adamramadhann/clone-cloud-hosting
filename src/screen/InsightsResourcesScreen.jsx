@@ -79,18 +79,18 @@ const InsightsResourcesScreen = () => {
         id="sticky-nav"
         className={`${
           isSticky 
-            ? 'fixed top-0 left-0 right-0 shadow-lg' 
+            ? 'fixed top-0 left-0 right-0 shadow-lg bg-white' 
             : 'relative'
-        } bg-white z-50 transition-shadow duration-200`}
+        } bg-transparent z-50 transition-shadow duration-200`}
       >
         <div className="flex items-center justify-center gap-16 py-4">
           {sections.map((section) => (
             <a
               key={section.id}
               href={`#${section.id}`}
-              className={`text-gray-800 hover:text-white hover:rounded-full hover:px-3 hover:py-2 hover:bg-gradient-to-tr from-[#FDA14D] to-[#FD4DF6] font-semibold text-lg tracking-wider transition-all duration-300 ${
+              className={`text-gray-800 hover:text-white hover:rounded-full hover:px-3 hover:py-2 hover:bg-gradient-to-r from-[#FDA14D] to-[#FD4DF6] font-semibold text-lg tracking-wider transition-all duration-300 ${
                 activeSection === section.id 
-                  ? 'text-white rounded-full px-3 py-2 bg-gradient-to-tr from-[#FDA14D] to-[#FD4DF6]' 
+                  ? 'text-white rounded-full px-3 py-2 bg-gradient-to-r from-[#FDA14D] to-[#FD4DF6]' 
                   : ''
               }`}
               onClick={() => {
@@ -108,7 +108,7 @@ const InsightsResourcesScreen = () => {
       </div>
 
       {/* Sections */}
-      <div className="w-full -mt-56">
+      <div className="w-full -mt-32">
         {sections.map((section) => (
           <div 
             key={section.id}

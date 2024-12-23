@@ -148,6 +148,76 @@ const images = [
     name: 'MaridaDB',
     Icon: SiMariadbfoundation
   },
+  {
+    id: 'wordpress',
+    name: 'Wordpress',
+    Icon: FaWordpressSimple
+  },
+  {
+    id: 'moodle',
+    name: 'Moodle',
+    Icon: SiMoodle
+  },
+  {
+    id: 'docker',
+    name: 'Docker',
+    Icon: FaDocker
+  },
+  {
+    id: 'nodejs',
+    name: 'NodeJS',
+    Icon: FaNodeJs
+  },
+  {
+    id: 'plesk',
+    name: 'Plesk',
+    Icon: SiPlesk
+  },
+  {
+    id: 'cpanel',
+    name: 'CPanel',
+    Icon: FaCpanel
+  },
+  {
+    id: 'mariadb',
+    name: 'MaridaDB',
+    Icon: SiMariadbfoundation
+  },
+  {
+    id: 'wordpress',
+    name: 'Wordpress',
+    Icon: FaWordpressSimple
+  },
+  {
+    id: 'moodle',
+    name: 'Moodle',
+    Icon: SiMoodle
+  },
+  {
+    id: 'docker',
+    name: 'Docker',
+    Icon: FaDocker
+  },
+  {
+    id: 'nodejs',
+    name: 'NodeJS',
+    Icon: FaNodeJs
+  },
+  {
+    id: 'plesk',
+    name: 'Plesk',
+    Icon: SiPlesk
+  },
+  {
+    id: 'cpanel',
+    name: 'CPanel',
+    Icon: FaCpanel
+  },
+  {
+    id: 'mariadb',
+    name: 'MaridaDB',
+    Icon: SiMariadbfoundation
+  },
 ];
 
 const ImageSelector = ({ selectedImage, onSelect }) => {

@@ -13,7 +13,7 @@ const InsightRecources = () => {
     }
   }
   return (
-    <section className="bg-[#101F43] mb-44 relative bottom-0 h-[700px] flex flex-col justify-center w-full " style={{ borderRadius: "50% 50% 0 0 / 15% 15% 0 0" }}>
+    <section className="bg-[#101F43]  relative bottom-10 h-[700px] flex flex-col justify-center w-full " style={{ borderRadius: "50% 50% 0 0 / 15% 15% 0 0" }}>
       <LayoutScreen>
           <div className="w-full relative flex gap-10">
             {/* Kolom Kiri */}
@@ -26,17 +26,16 @@ const InsightRecources = () => {
                 Tidak ada kewajiban untuk upgrade, downgrade atau cancel setiap waktu
               </p>
               <span className="flex items-center gap-4">
-                <button className="border border-white w-[192px] h-12 text-white hover:text-black bg-blue-400 rounded-md">
+                <button className=" w-[192px] h-12 text-white hover:text-black bg-blue-400 rounded-md">
                   Buat Private Cloud
                 </button>
-                <button className="border  bg-gray-400/30 rounded-md w-[162px] h-12 border-white text-white hover:text-black">
+                <button className="outline outline-2 bg-gray-400/30 rounded-md w-[162px] h-12 outline-white text-white hover:text-black">
                   Hubungi Kami
                 </button>
               </span>
             </div>
-
             {/* Kolom Kanan */}
-            <div className=" -bottom-[420px] right-14 relative px-14 flex flex-col gap-2 z-20 justify-center w-[500px] h-[120px] rounded-md bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
+            <div className=" -bottom-[420px] -right-2 relative px-8 flex flex-col gap-2 z-20 justify-center w-[493px] h-[134px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
                 <h1 className='text-sm z-50 text-white' >subcribe here to get update</h1>
                 <span className='flex  z-50 justify-between gap-2 w-full' >
                 <input
@@ -52,7 +51,7 @@ const InsightRecources = () => {
                 </span>
             </div>
           </div>
-          <img src="src/assets/image.png" className='absolute z-0 right-[280px] top-[220px]' alt="" />
+          <img src="src/assets/image.png" className='absolute z-0 right-[325px] top-[220px]' alt="" />
       </LayoutScreen>
     </section>
   );

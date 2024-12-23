@@ -23,4 +23,8 @@ footer p {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+.shadow-edit {
+    box-shadow: 6px 10px 15px rgba(0, 0, 0, 0.027);
+}
   

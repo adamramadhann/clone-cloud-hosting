@@ -76,7 +76,7 @@ const Card = () => {
                     <div className="text-4xl font-bold">
                         Rp {calculatePrice()}
                     </div>
-                    <button className="px-6 py-2 bg-[#45a2ff] text-white rounded-sm font-medium hover:bg-blue-600 transition-colors">
+                    <button className="px-6 py-2 bg-[#45a2ff] text-white rounded-md font-medium hover:bg-blue-600 transition-colors">
                         DEPLOY NOW
                     </button>
                 </div>
