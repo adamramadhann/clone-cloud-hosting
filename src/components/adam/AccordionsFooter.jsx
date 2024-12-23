@@ -83,25 +83,25 @@ const AccordionsFooter = () => {
   >
     {deskripsi.map((val) => (
       <span key={val.judul} className="flex flex-col">
-        <p className="text-[#65686D]">{val.judul}</p>
+        <p className="text-[#65686D] text-lg font-bold">{val.judul}</p>
         <p
-          className="text-[#8592A4]"
+          className="text-[#8592A4] text-base "
           dangerouslySetInnerHTML={{ __html: val.deskripsi }}
         />
       </span>
     ))}
   </section>
   <section
-    className={`h-[60px] absolute w-full bottom-0 ${
+    className={`h-[70px] absolute w-full -bottom-3 ${
       isExpanded
         ? '' 
-        : 'bg-gradient-to-b from-white/40 to-white  z-10'
+        : 'bg-gradient-to-b from-slate-50/60 to-slate-50/90 blur-sm  z-10'
     } transition-all duration-500`}
   >
   </section>
   <button
     onClick={toggleText}
-    className="mt-2 text-xs z-50 py-2 absolute -bottom-10  transform text-blue-500 transition-all"
+    className="mt-2 text-xs z-50 py-2 absolute   transform text-blue-500 transition-all"
   >
     {isExpanded ? 'Show Less' : 'Show More'}
   </button>

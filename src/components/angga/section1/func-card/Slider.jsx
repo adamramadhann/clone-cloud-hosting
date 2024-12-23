@@ -6,6 +6,7 @@ const Slider = ({ label, value, unit, min, max, step, onChange }) => {
     if (value > min) onChange(value - step);
   };
 
+
   const increase = () => {
     if (value < max) onChange(value + step);
   };
