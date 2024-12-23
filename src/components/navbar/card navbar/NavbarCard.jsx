@@ -1,8 +1,8 @@
 import React from 'react'
 
-const NavbarCard = ({ titleCard, descCard, titlePromo, descPromo }) => {
+const NavbarCard = ({ titleCard, descCard, titlePromo, descPromo, styling }) => {
   return (
-       <div className="absolute hidden group-hover:block w-screen max-w-6xl -left-[600px] top-full pt-4 rounded-lg">
+       <div className={`absolute hidden group-hover:block w-screen max-w-[1200px] top-full pt-4 rounded-lg ${styling}`}>
         <div className="w-full h-full bg-slate-50 rounded-t-lg shadow-lg grid grid-cols-4 gap-6 p-4 pb-9 text-gray-700">
             <div className="w-64 h-28 bg-white/70 shadow-sm rounded-lg p-3 flex flex-col justify-center items-start gap-3">
                 <h1 className='uppercase text-black font-semibold text-base'>{titleCard}</h1>

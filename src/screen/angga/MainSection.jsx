@@ -9,7 +9,7 @@ const MainSection = ({ styling }) => {
     <LayoutScreen>
         <div className={`bg-transparent w-full mt-2 h-full flex flex-col items-center absolute z-40 top-24 ${styling} `}>
             <img src={bannerPromo} alt="banner" className='cursor-pointer'/>
-            <div className="max-w-[1300px] h-full flex items-start mt-6">
+            <div className="max-w-[1300px] h-full flex items-start mt-6 relative">
                 <div className="w-1/2 flex flex-col items-start gap-4 text-white">
                     <h1 className='w-full text-[61px] tracking-wider leading-snug font-bold text-wrap'>Kemudahan Layanan Server Terjangkau & Fleksibel</h1>
                     <p className='text-lg text-wrap w-[610px] tracking-wide'>Luncurkan Layanan Cloud dengan Membayar Sesuai Pemakaian dalam Sekali Klik !</p>
