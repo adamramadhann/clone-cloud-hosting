@@ -8,7 +8,7 @@ import {
 const FeaturedCustomer = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Create an array with exactly 18 items (2 rows of 9)
+  
   const imageSlate = [
     { img: logoIndmaret },
     { img: logoBukalapak },
@@ -32,7 +32,7 @@ const FeaturedCustomer = () => {
 
   const visibleImagesCount = 18; 
 
-  // Calculate visible images
+  
   const visibleImages = [
     ...imageSlate.slice(currentImageIndex, currentImageIndex + visibleImagesCount),
     ...imageSlate.slice(0, Math.max(0, (currentImageIndex + visibleImagesCount) - imageSlate.length)),

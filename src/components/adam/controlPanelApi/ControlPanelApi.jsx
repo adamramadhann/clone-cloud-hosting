@@ -1,7 +1,7 @@
 import React from 'react'
 import LayoutScreen from '../../../components/LayoutScreen'
 
-const BuildForBusines = () => {
+const ControlPanelApi = () => {
 
 
     const dataControlPanel = [
@@ -48,4 +48,4 @@ const BuildForBusines = () => {
   )
 }
 
-export default BuildForBusines
+export default ControlPanelApi

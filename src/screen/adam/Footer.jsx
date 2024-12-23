@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../importGambar';
 import { FaFacebook, FaLinkedinIn, FaPinterestP, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
-import LayoutScreen from '../components/LayoutScreen';
-import AccordionsFooter from '../components/adam/AccordionsFooter';
+import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../../importGambar';
+import LayoutScreen from '../../components/LayoutScreen';
+import AccordionsFooter from '../../components/adam/AccordionsFooter';
 
 const Footer = () => {
   const imageCopyRigth = [

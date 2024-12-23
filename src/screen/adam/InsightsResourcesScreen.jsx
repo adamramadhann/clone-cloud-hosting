@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import InsightRecources from '../components/adam/InsightsResources/InsightRecourcesBg';
-import InsightRecourcesIconMenu from '../components/adam/InsightsResources/InsightRecourcesIconMenu';
-import FeaturedCustomer from '../components/adam/FeaturedCstmr/FeaturedCustomer';
-import BuildForBusines from '../components/adam/buildForBusines/BuildForBusines';
-import ControlPanelApi from '../components/adam/controlPanelApi/ControlPanelApi';
+import ControlPanelApi from '../../components/adam/controlPanelApi/ControlPanelApi';
+import BuildForBusines from '../../components/adam/buildForBusines/BuildForBusines';
+import FeaturedCustomer from '../../components/adam/FeaturedCstmr/FeaturedCustomer';
+import InsightRecourcesIconMenu from '../../components/adam/InsightsResources/InsightRecourcesIconMenu';
+import InsightRecources from '../../components/adam/InsightsResources/InsightRecourcesBg';
 
 const sections = [
   { id: 'controlPanel', label: 'CONTROL PANEL & API', component: <ControlPanelApi /> },
