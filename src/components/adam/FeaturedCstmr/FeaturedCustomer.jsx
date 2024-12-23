@@ -7,9 +7,8 @@ import {
 
 const FeaturedCustomer = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isSliding, setIsSliding] = useState(false);
-  const [intervalId, setIntervalId] = useState(null);
 
+  // Create an array with exactly 18 items (2 rows of 9)
   const imageSlate = [
     { img: logoIndmaret },
     { img: logoBukalapak },
@@ -19,84 +18,75 @@ const FeaturedCustomer = () => {
     { img: msFlow },
     { img: peruri },
     { img: ot },
-    { img: ppj },
-    { img: madrasah },  
+    { img: sugoIndo },
     { img: ppj },
     { img: telkom },
-    { img: sugoIndo },
     { img: techno },
     { img: viva },
     { img: wide },
-  ];
+    { img: peruri },
+    { img: ot },
+    { img: sugoIndo },
+    { img: ppj },
+  ]
 
-  // Change image function
-  const changeImage = () => {
-    setIsSliding(true);
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageSlate.length);
-  };
+  const visibleImagesCount = 18; 
 
-  // Handle interval start and stop
-  const startSliding = () => {
-    const id = setInterval(changeImage, 3000);
-    setIntervalId(id);
-  };
-
-  const stopSliding = () => {
-    if (intervalId) {
-      clearInterval(intervalId);
-      setIntervalId(null);
-    }
-  };
+  // Calculate visible images
+  const visibleImages = [
+    ...imageSlate.slice(currentImageIndex, currentImageIndex + visibleImagesCount),
+    ...imageSlate.slice(0, Math.max(0, (currentImageIndex + visibleImagesCount) - imageSlate.length)),
+  ].slice(0, visibleImagesCount);
 
   useEffect(() => {
-    if (isSliding) {
-      const timeout = setTimeout(() => setIsSliding(false), 500); // Transition duration
-      return () => clearTimeout(timeout);
-    }
-  }, [isSliding]);
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 9) % imageSlate.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [imageSlate.length]);
 
   return (
     <LayoutScreen>
-      <section className="flex w-full items-center justify-center">
+      <section className="flex w-full items-center -mt-10 justify-center">
         <div className="flex rounded-lg relative h-[663px] flex-col items-center justify-center">
-          <h1
-            className="text-5xl font-bold pb-32 text-center"
-            onMouseEnter={() => {
-              setIsSliding(false);
-              startSliding(); // Start animation when mouse enters
-            }}
-            onMouseLeave={() => {
-              stopSliding(); // Stop animation when mouse leaves
-            }}
+          <h1 className="text-6xl font-bold pb-20 text-center">Featured Customer</h1>
+          <div 
+            style={{ boxShadow: '6px 40px 45px rgba(0, 0, 0, 0.027)' }} 
+            className="w-[1165px] rounded-lg bg-white overflow-hidden p-5 max-h-[400px] flex flex-col justify-center items-center"
           >
-            Featured Customer
-          </h1>
-          <div className="w-[1165px] bg-white p-5 max-h-[400px] flex flex-col justify-center items-center">
-            <div className="w-full relative">
-              <div
-                className={`transition-transform w-full py-3  ease-out ${
-                  isSliding
-                    ? 'transform translate-x-[100%] duration-500 opacity-0'
-                    : 'transform  duration-500 opacity-100'
-                }`}
-              >
-                <div className="grid grid-cols-8 max-h-[300px] w-full gap-5">
-                  {imageSlate.map((image, index) => (
-                    <span
-                      key={index}
-                      className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg"
-                    >
-                      <img
-                        src={image.img}
-                        alt="customer-logo"
-                        className="object-contain w-20 h-20"
-                      />
-                    </span>
-                  ))}
+            <div className='w-full overflow-hidden h-[300px] px-10 flex items-center justify-center flex-col bg-slate-100/10' >
+              
+            <div className="grid grid-cols-9 p-5 mr-5 gap-20 overflow-hidden ">
+              {visibleImages.slice(0, 9).map((image, index) => (
+                <div
+                  key={`row1-${index}`}
+                  className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg transform -translate-y-2"
+                >
+                  <img
+                    src={image.img}
+                    alt={`customer-logo-${index}`}
+                    className="object-contain w-20 h-20"
+                  />
                 </div>
-              </div>
+              ))}
             </div>
-            <button className="text-blue-500 hover:text-white hover:bg-blue-500 rounded-md w-[200px] mx-auto py-4 text-sm border">
+            <div className="grid grid-cols-9 mr-5 p-5 gap-20 overflow-hidden ">
+              {visibleImages.slice(9, 18).map((image, index) => (
+                <div
+                  key={`row2-${index}`}
+                  className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg transform translate-y-2"
+                >
+                  <img
+                    src={image.img}
+                    alt={`customer-logo-${index + 9}`}
+                    className="object-contain w-20 h-20"
+                  />
+                </div>
+              ))}
+            </div>
+            </div>
+            <button className="text-blue-500 hover:text-white hover:bg-blue-500 rounded-md w-[200px] mx-auto py-4 text-sm border mt-8">
               Customer Story
             </button>
           </div>

@@ -84,7 +84,7 @@ const Card1 = () => {
           {data.map((item, index) => (
             <div 
               key={index} 
-              className="min-w-[313px] h-[334px] flex flex-col justify-center items-center gap-4 rounded-lg bg-white/10 shadow-lg mt-5"
+              className="min-w-[313px] h-[334px] flex flex-col justify-center items-center gap-4 rounded-lg bg-white/10 shadow-edit mt-5"
             >
               <img src={item.img} alt="product" className='absolute top-6 w-28 h-28'/>
               <h1 className='text-black font-bold text-xl capitalize'>{item.title}</h1>

@@ -5,12 +5,13 @@ import { GrServerCluster } from 'react-icons/gr'
 import { FaCode } from 'react-icons/fa'
 import { PiBookBold } from 'react-icons/pi'
 import { AiOutlineRight } from 'react-icons/ai'
+import { IoShieldCheckmarkOutline } from 'react-icons/io5'
 
 const BuildForBusines = () => {
     const dataBuild = [
         {
             title : 'Platform Terbaik',
-            icon : <CiSquareQuestion size={40} color='white' />,
+            icon : <IoShieldCheckmarkOutline size={40} color='white' />,
             deskripsi : ' Layanan sudah dipercaya lebih dari +300.000 pengguna diseluruh Indonesia dengan jaminan SLA 99.5% untuk mendukung Bisnis/Startup Anda.',
             buttonTeks : 'Security'
         },
@@ -38,10 +39,10 @@ const BuildForBusines = () => {
     <LayoutScreen>
             <section id="buildForBusines"  className=' flex items-center justify-center flex-col h-full  ' >
                 <h1 className='text-6xl h-[120px] text-transparent bg-clip-text tracking-wide bg-gradient-to-r to-[#fd4df6] from-[#fda14d] font-bold mb-5' >Built For Business</h1>
-                <div className='flex justify-evenly items-center gap-1 bg-slate-100 bg-opacity-50 w-[1180px] h-[437px] py-2 rounded-lg' >
+                <div className='flex justify-evenly items-center gap-1 bg-gradient-to-b from-slate-50/30 to-slate-100/40 w-[1180px] h-[437px] py-3 rounded-lg' >
                 {
                     dataBuild.map((val, index) => (
-                        <div key={index} className='flex  items-center flex-col gap-8 py-10 px-4 rounded-lg bg-slate-50' > 
+                        <div key={index} className='flex  items-center flex-col gap-8 py-10 px-4 rounded-lg bg-white' > 
                             <span style={{background : 'linear-gradient(314.65deg,#fd4df6 -.61%,#fda14d 100%)'}} className='w-20 flex items-center justify-center h-20 rounded-full  ' >
                                 {val.icon}
                             </span>
