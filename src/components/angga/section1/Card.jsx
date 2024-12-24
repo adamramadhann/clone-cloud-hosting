@@ -7,7 +7,7 @@ const Card = () => {
     const [ram, setRam] = useState(1);
     const [storage, setStorage] = useState(20);
     const [selectedImage, setSelectedImage] = useState('wordpress');
-    const [activeButton, setActiveButton] = useState(null)
+    const [activeButton, setActiveButton] = useState('install')
   
     const calculatePrice = useCallback(() => {
       const cpuPrice = cpu * 5;
@@ -17,9 +17,9 @@ const Card = () => {
     }, [cpu, ram, storage]);
 
   return (
-    <div className="h-[980px] bg-trannsparent flex flex-col items-center absolute z-40 top-0 right-[10px] mt-2">
+    <div className="h-[880px] bg-trannsparent flex flex-col items-center absolute z-40 -top-2 right-[10px] mt-2">
         <div className="max-w-[655px] h-full mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="w-full h-full py-20 px-20">
+            <div className="w-full h-full p-10">
                 <div className="flex justify-evenly items-center mb-8">
                     <button 
                         onClick={() => setActiveButton('install')} 
