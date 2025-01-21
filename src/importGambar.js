@@ -6,91 +6,162 @@ import footerKominfo from './assets/footer/IdCloudFooterPseKominfo.png';
 import footerLogolokal from './assets/footer/image.png';
 import payment from './assets/footer/Screenshot 2024-12-21 at 16.27.30.png';
 
-
-export {
-    footerId,
-    footerBsi1,
-    footerBsi2,
-    footerKominfo,
-    footerLogolokal,
-    payment,
-  };
-
 // navbar
-export const logoIdCloud = 'src/assets/navbar/logo-idcloud.svg'
-export const cloudVps = 'src/assets/navbar/cloudvps.webp'
-export const serverVps = 'src/assets/navbar/servervps.webp'
-export const bareMetal = 'src/assets/navbar/baremetal.webp'
-export const backup = 'src/assets/navbar/backup.webp'
-export const dedicatedServer = 'src/assets/navbar/dedicated.webp'
-export const manageVpsWhm = 'src/assets/navbar/vps-whm.webp'
-export const objectStorage = 'src/assets/navbar/is3.webp'
-export const kubernetes = 'src/assets/navbar/kubernetes.webp'
-export const colocation = 'src/assets/navbar/colocation.webp'
-export const cyberpanel = 'src/assets/navbar/cyberpanel.webp'
+import logoIdCloud from './assets/navbar/logo-idcloud.svg';
+import cloudVps from './assets/navbar/cloudvps.webp';
+import serverVps from './assets/navbar/servervps.webp';
+import bareMetal from './assets/navbar/baremetal.webp';
+import backup from './assets/navbar/backup.webp';
+import dedicatedServer from './assets/navbar/dedicated.webp';
+import manageVpsWhm from './assets/navbar/vps-whm.webp';
+import objectStorage from './assets/navbar/is3.webp';
+import kubernetes from './assets/navbar/kubernetes.webp';
+import colocation from './assets/navbar/colocation.webp';
+import cyberpanel from './assets/navbar/cyberpanel.webp';
 
-// costumers logo
-export const logoIndmaret = 'src/assets/featuredCostumers/indomaret.webp'
-export const logoBukalapak = 'src/assets/featuredCostumers/bukalapak.webp'
-export const dhm = 'src/assets/featuredCostumers/dhm.webp'
-export const kimiaFarma = 'src/assets/featuredCostumers/kimiaFarma.webp'
-export const madrasah = 'src/assets/featuredCostumers/madrasah.webp'
-export const msFlow = 'src/assets/featuredCostumers/msglow.webp'
-export const peruri = 'src/assets/featuredCostumers/peruri.webp'
-export const ot = 'src/assets/featuredCostumers/ot.webp'
-export const ppj = 'src/assets/featuredCostumers/ppj.webp'
-export const smesco = 'src/assets/featuredCostumers/smesco.webpp'
-export const telkom = 'src/assets/featuredCostumers/telkom.webp'
-export const sugoIndo2 = 'src/assets/featuredCostumers/sugoIndo.webp'
-export const techno2 = 'src/assets/featuredCostumers/texhno.webp'
-export const viva2 = 'src/assets/featuredCostumers/viva.webp'
-export const wide2 = 'src/assets/featuredCostumers/wide.webp'
-export const pertamina2 = 'src/assets/featuredCostumers/pertamina.webp'
-export const logoIndmaret2 = 'src/assets/featuredCostumers/indomaret.webp'
-export const logoBukalapak2 = 'src/assets/featuredCostumers/bukalapak.webp'
-export const dhm2 = 'src/assets/featuredCostumers/dhm.webp'
-export const kimiaFarma2 = 'src/assets/featuredCostumers/kimiaFarma.webp'
-export const madrasah2 = 'src/assets/featuredCostumers/madrasah.webp'
-export const msFlow2 = 'src/assets/featuredCostumers/msglow.webp'
-export const sugoIndo = 'src/assets/featuredCostumers/sugoIndo.webp'
-export const techno = 'src/assets/featuredCostumers/texhno.webp'
-export const viva = 'src/assets/featuredCostumers/viva.webp'
-export const wide = 'src/assets/featuredCostumers/wide.webp'
-export const pertamina = 'src/assets/featuredCostumers/pertamina.webp'
+// customers logo
+import logoIndmaret from './assets/featuredCostumers/indomaret.webp';
+import logoBukalapak from './assets/featuredCostumers/bukalapak.webp';
+import dhm from './assets/featuredCostumers/dhm.webp';
+import kimiaFarma from './assets/featuredCostumers/kimiaFarma.webp';
+import madrasah from './assets/featuredCostumers/madrasah.webp';
+import msFlow from './assets/featuredCostumers/msglow.webp';
+import peruri from './assets/featuredCostumers/peruri.webp';
+import ot from './assets/featuredCostumers/ot.webp';
+import ppj from './assets/featuredCostumers/ppj.webp';
+import smesco from './assets/featuredCostumers/smesco.webp';
+import telkom from './assets/featuredCostumers/telkom.webp';
+import sugoIndo2 from './assets/featuredCostumers/sugoIndo.webp';
+import techno2 from './assets/featuredCostumers/texhno.webp';
+import viva2 from './assets/featuredCostumers/viva.webp';
+import wide2 from './assets/featuredCostumers/wide.webp';
+import pertamina2 from './assets/featuredCostumers/pertamina.webp';
+import logoIndmaret2 from './assets/featuredCostumers/indomaret.webp';
+import logoBukalapak2 from './assets/featuredCostumers/bukalapak.webp';
+import dhm2 from './assets/featuredCostumers/dhm.webp';
+import kimiaFarma2 from './assets/featuredCostumers/kimiaFarma.webp';
+import madrasah2 from './assets/featuredCostumers/madrasah.webp';
+import msFlow2 from './assets/featuredCostumers/msglow.webp';
+import sugoIndo from './assets/featuredCostumers/sugoIndo.webp';
+import techno from './assets/featuredCostumers/texhno.webp';
+import viva from './assets/featuredCostumers/viva.webp';
+import wide from './assets/featuredCostumers/wide.webp';
+import pertamina from './assets/featuredCostumers/pertamina.webp';
 
+// angga - section 1
+import bannerPromo from './assets/angga/section1/banner-promo-yesid.webp';
 
-// angga
-// section 1
-export const bannerPromo = 'src/assets/angga/section1/banner-promo-yesid.webp'
-
-// imageselector
-export const wordpressSec1 = 'src/assets/angga/section1/image-selector/wordpress.webp'
-export const moodleSec1 = 'src/assets/angga/section1/image-selector/moodle.webp'
-export const dockerSec1 = 'src/assets/angga/section1/image-selector/docker.webp'
-export const nodejsSec1 = 'src/assets/angga/section1/image-selector/nodejs.webp'
-export const sisterSec1 = 'src/assets/angga/section1/image-selector/sister.webp'
-export const cyberpanelSec1 = 'src/assets/angga/section1/image-selector/cyberpanel1.webp'
-export const cpanelSec1 = 'src/assets/angga/section1/image-selector/cpanel.webp'
-export const pleskSec1 = 'src/assets/angga/section1/image-selector/plesk.webp'
-export const mailcoachSec1 = 'src/assets/angga/section1/image-selector/mailcoach1.webp'
-export const dapodikSec1 = 'src/assets/angga/section1/image-selector/dapodik.webp'
-export const mariadbSec1 = 'src/assets/angga/section1/image-selector/mariadb.webp'
-export const webuzoSec1 = 'src/assets/angga/section1/image-selector/webuzo.webp'
-export const mikrotikSec1 = 'src/assets/angga/section1/image-selector/mikrotik.webp'
-export const haproxySec1 = 'src/assets/angga/section1/image-selector/haproxy.webp'
-export const postgresqlSec1 = 'src/assets/angga/section1/image-selector/postgresql.webp'
-export const aapanelSec1 = 'src/assets/angga/section1/image-selector/aapanel.webp'
+// image selector
+import wordpressSec1 from './assets/angga/section1/image-selector/wordpress.webp';
+import moodleSec1 from './assets/angga/section1/image-selector/moodle.webp';
+import dockerSec1 from './assets/angga/section1/image-selector/docker.webp';
+import nodejsSec1 from './assets/angga/section1/image-selector/nodejs.webp';
+import sisterSec1 from './assets/angga/section1/image-selector/sister.webp';
+import cyberpanelSec1 from './assets/angga/section1/image-selector/cyberpanel1.webp';
+import cpanelSec1 from './assets/angga/section1/image-selector/cpanel.webp';
+import pleskSec1 from './assets/angga/section1/image-selector/plesk.webp';
+import mailcoachSec1 from './assets/angga/section1/image-selector/mailcoach1.webp';
+import dapodikSec1 from './assets/angga/section1/image-selector/dapodik.webp';
+import mariadbSec1 from './assets/angga/section1/image-selector/mariadb.webp';
+import webuzoSec1 from './assets/angga/section1/image-selector/webuzo.webp';
+import mikrotikSec1 from './assets/angga/section1/image-selector/mikrotik.webp';
+import haproxySec1 from './assets/angga/section1/image-selector/haproxy.webp';
+import postgresqlSec1 from './assets/angga/section1/image-selector/postgresql.webp';
+import aapanelSec1 from './assets/angga/section1/image-selector/aapanel.webp';
 
 // section 2
-export const product1 = 'src/assets/angga/section2/product-1.webp'
-export const product2 = 'src/assets/angga/section2/product-2.webp'
-export const product3 = 'src/assets/angga/section2/product-3.webp'
-export const product4 = 'src/assets/angga/section2/product-4.webp'
-export const bannerCustomer = 'src/assets/angga/section2/banner-logo-new.webp'
-// end of export angga
+import product1 from './assets/angga/section2/product-1.webp';
+import product2 from './assets/angga/section2/product-2.webp';
+import product3 from './assets/angga/section2/product-3.webp';
+import product4 from './assets/angga/section2/product-4.webp';
+import bannerCustomer from './assets/angga/section2/banner-logo-new.webp';
 
-// feturedCostummer 
-export const costumers1 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.00.55.png'
-export const costumers2 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.01.20.png'
-export const costumers3 = 'src/assets/featuredCostumers/Screenshot 2024-12-22 at 12.02.00.png'
+// featured customers
+import costumers1 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.00.55.png';
+import costumers2 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.01.20.png';
+import costumers3 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.02.00.png';
 
+export {
+  // footer
+  footerId,
+  footerBsi1,
+  footerBsi2,
+  footerKominfo,
+  footerLogolokal,
+  payment,
+
+  // navbar
+  logoIdCloud,
+  cloudVps,
+  serverVps,
+  bareMetal,
+  backup,
+  dedicatedServer,
+  manageVpsWhm,
+  objectStorage,
+  kubernetes,
+  colocation,
+  cyberpanel,
+
+  // customers logo
+  logoIndmaret,
+  logoBukalapak,
+  dhm,
+  kimiaFarma,
+  madrasah,
+  msFlow,
+  peruri,
+  ot,
+  ppj,
+  smesco,
+  telkom,
+  sugoIndo2,
+  techno2,
+  viva2,
+  wide2,
+  pertamina2,
+  logoIndmaret2,
+  logoBukalapak2,
+  dhm2,
+  kimiaFarma2,
+  madrasah2,
+  msFlow2,
+  sugoIndo,
+  techno,
+  viva,
+  wide,
+  pertamina,
+
+  // angga section 1
+  bannerPromo,
+
+  // image selector
+  wordpressSec1,
+  moodleSec1,
+  dockerSec1,
+  nodejsSec1,
+  sisterSec1,
+  cyberpanelSec1,
+  cpanelSec1,
+  pleskSec1,
+  mailcoachSec1,
+  dapodikSec1,
+  mariadbSec1,
+  webuzoSec1,
+  mikrotikSec1,
+  haproxySec1,
+  postgresqlSec1,
+  aapanelSec1,
+
+  // section 2
+  product1,
+  product2,
+  product3,
+  product4,
+  bannerCustomer,
+
+  // featured customers
+  costumers1,
+  costumers2,
+  costumers3
+};
