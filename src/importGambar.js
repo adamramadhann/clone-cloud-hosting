@@ -81,6 +81,10 @@ import costumers1 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.0
 import costumers2 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.01.20.png';
 import costumers3 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.02.00.png';
 
+
+// controler api
+import controlerApi from './assets/Screenshot 2024-12-22 at 15.50.20.png';
+
 export {
   // footer
   footerId,
@@ -89,6 +93,7 @@ export {
   footerKominfo,
   footerLogolokal,
   payment,
+  
 
   // navbar
   logoIdCloud,
@@ -163,5 +168,6 @@ export {
   // featured customers
   costumers1,
   costumers2,
-  costumers3
+  costumers3,
+  controlerApi
 };

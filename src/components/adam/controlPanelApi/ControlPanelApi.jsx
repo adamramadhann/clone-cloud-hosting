@@ -1,5 +1,6 @@
 import React from 'react'
 import LayoutScreen from '../../../components/LayoutScreen'
+import { controlerApi } from '../../../importGambar'
 
 const ControlPanelApi = () => {
 
@@ -38,7 +39,7 @@ const ControlPanelApi = () => {
                             }
                         </div>
                     <div className='flex-1  ml-4 ' >
-                        <img src="src/assets/Screenshot 2024-12-22 at 15.50.20.png"  alt="" />
+                        <img src={controlerApi}  alt="" />
                     </div>
                     </div>
                 </div>
