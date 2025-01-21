@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LayoutScreen from '../../LayoutScreen';
+import LayoutScreen from '../../../LayoutScreen';
 
 const InsightRecources = () => {
 
@@ -18,10 +18,10 @@ const InsightRecources = () => {
           <div className="w-full relative flex gap-10">
             {/* Kolom Kiri */}
             <div className="w-[700px] flex flex-col gap-5 text-white">
-              <h1 className="text-transparent tracking-wide bg-clip-text bg-gradient-to-b font-bold text-5xl to-[#EB6BD0] from-[#F09B6B]">
+              <h1 className="text-transparent tracking-wide bg-clip-text bg-gradient-to-b font-bold text-6xl to-[#EB6BD0] from-[#F09B6B]">
                 Solusi Sempurna untuk Bisnis Anda
               </h1>
-              <p className="text-lg">
+              <p className="text-lg text-[#8292a6] ">
                 Dalam Waktu 3 Menit, Anda akan mendapatkan semua layanan dengan cepat.
                 Tidak ada kewajiban untuk upgrade, downgrade atau cancel setiap waktu
               </p>
@@ -50,8 +50,8 @@ const InsightRecources = () => {
                 <button onClick={handleINput} className='w-[132px] h-12 z-50 flex items-center justify-center bg-white/30 text-base border border-white text-white rounded-md' >SUBCRIBE</button>
                 </span>
             </div>
+          <img src="src/assets/image.png" className='absolute z-0 -right-[20px] -top-[20px]' alt="" />
           </div>
-          <img src="src/assets/image.png" className='absolute z-0 right-[325px] top-[220px]' alt="" />
       </LayoutScreen>
     </section>
   );

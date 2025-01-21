@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import LayoutScreen from '../../LayoutScreen';
+import LayoutScreen from '../../../LayoutScreen';
 import { 
   dhm, kimiaFarma, logoBukalapak, logoIndmaret, madrasah, 
   msFlow, peruri, ot, ppj, telkom, sugoIndo, techno, viva, wide 
-} from '../../../importGambar';
+} from '../../../../importGambar';
 
 const FeaturedCustomer = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Create an array with exactly 18 items (2 rows of 9)
+  
   const imageSlate = [
     { img: logoIndmaret },
     { img: logoBukalapak },
@@ -61,7 +61,7 @@ const FeaturedCustomer = () => {
               {visibleImages.slice(0, 9).map((image, index) => (
                 <div
                   key={`row1-${index}`}
-                  className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg transform -translate-y-2"
+                  className="bg-white w-24 h-24 px-4 py-2  rounded-lg transform -translate-y-2"
                 >
                   <img
                     src={image.img}
@@ -75,7 +75,7 @@ const FeaturedCustomer = () => {
               {visibleImages.slice(9, 18).map((image, index) => (
                 <div
                   key={`row2-${index}`}
-                  className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg transform translate-y-2"
+                  className="bg-white w-24 h-24 px-4 py-2  rounded-lg transform translate-y-2"
                 >
                   <img
                     src={image.img}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { product1, product2, product3, product4 } from '../../../importGambar';
+import { product1, product2, product3, product4 } from '../../../importGambar.js';
 
 const Card1 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

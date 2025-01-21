@@ -17,19 +17,19 @@ const Card = () => {
     }, [cpu, ram, storage]);
 
   return (
-    <div className="h-[980px] bg-trannsparent flex flex-col items-center absolute z-40 top-28 right-[310px] mt-2">
+    <div className="h-[980px] bg-trannsparent flex flex-col items-center absolute z-40 top-28 right-[200px] mt-2">
         <div className="max-w-[655px] h-full mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="w-full h-full py-20 px-20">
                 <div className="flex justify-evenly items-center mb-8">
                     <button 
                         onClick={() => setActiveButton('install')} 
-                        className={`w-36 h-10 px-1 py-1 text-base bg-white text-gray-700 duration-500 ease-in-out transition-all hover:bg-gradient-to-br from-[#fc9c5b] to-[#fc56e3] hover:text-white rounded-full font-medium ${activeButton === 'install' ? 'bg-gradient-to-br from-[#fc9c5b] to-[#fc56e3] text-white' : ''}`}
+                        className={`w-36 h-10 px-1 py-1 text-base bg-white text-gray-700 duration-500 ease-in-out transition-all hover:bg-gradient-to-r from-[#fc9c5b] to-[#fc56e3] hover:text-white rounded-full font-medium ${activeButton === 'install' ? 'bg-gradient-to-r from-[#fc9c5b] to-[#fc56e3] text-white' : ''}`}
                     >
                         INSTALL APP
                     </button>
                     <button
                         onClick={() => setActiveButton('vm')}
-                        className={`w-36 h-10 px-1 py-1 text-base bg-white text-gray-700 duration-500 ease-in-out transition-all hover:bg-gradient-to-br from-[#fc9c5b] to-[#fc56e3] hover:text-white rounded-full font-medium ${activeButton === 'vm' ? 'bg-gradient-to-br from-[#fc9c5b] to-[#fc56e3] text-white' : ''}`}
+                        className={`w-36 h-10 px-1 py-1 text-base bg-white text-gray-700 duration-500 ease-in-out transition-all hover:bg-gradient-to-r from-[#fc9c5b] to-[#fc56e3] hover:text-white rounded-full font-medium ${activeButton === 'vm' ? 'bg-gradient-to-r from-[#fc9c5b] to-[#fc56e3] text-white' : ''}`}
                     >
                         BUAT VM
                     </button>

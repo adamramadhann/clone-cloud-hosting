@@ -48,10 +48,29 @@ export const viva = 'src/assets/featuredCostumers/viva.webp'
 export const wide = 'src/assets/featuredCostumers/wide.webp'
 export const pertamina = 'src/assets/featuredCostumers/pertamina.webp'
 
+// controler api
+export const controlerImage = 'src/assets/Screenshot 2024-12-22 at 15.50.20.png'
+
 
 // angga
 // section 1
 export const bannerPromo = 'src/assets/angga/section1/banner-promo-yesid.webp'
+// imageselector
+export const cpanelsec1 = 'src/assets/angga/section1/image-selection/cpanel.webp'
+export const cyberpanelsec1 = 'src/assets/angga/section1/image-selection/cyberpanel.webp'
+export const dockersec1 = 'src/assets/angga/section1/image-selection/docker.webp'
+export const moodlesec1 = 'src/assets/angga/section1/image-selection/moodle.webp'
+export const nodejssec1 = 'src/assets/angga/section1/image-selection/nodejs.webp'
+export const plesksec1 = 'src/assets/angga/section1/image-selection/plesk.webp'
+export const wordpresssec1 = 'src/assets/angga/section1/image-selection/wordpress.webp'
+export const mailcoachsec1 = 'src/assets/angga/section1/image-selection/mailcoach.webp'
+export const dapodiksec1 = 'src/assets/angga/section1/image-selection/dapodik.webp'
+export const mariaDBsec1 = 'src/assets/angga/section1/image-selection/mariadb.webp'
+export const webuzosec1 = 'src/assets/angga/section1/image-selection/webuzo.webp'
+export const mikrotiksec1 = 'src/assets/angga/section1/image-selection/mikrotik.webp'
+export const haproxysec1 = 'src/assets/angga/section1/image-selection/haproxy.webp'
+export const postgresec1 = 'src/assets/angga/section1/image-selection/postgresql.webp'
+export const aapanelsec1 = 'src/assets/angga/section1/image-selection/aapanel.webp'
 
 // section 2
 export const product1 = 'src/assets/angga/section2/product-1.webp'
@@ -59,6 +78,7 @@ export const product2 = 'src/assets/angga/section2/product-2.webp'
 export const product3 = 'src/assets/angga/section2/product-3.webp'
 export const product4 = 'src/assets/angga/section2/product-4.webp'
 export const bannerCustomer = 'src/assets/angga/section2/banner-logo-new.webp'
+
 // end of export angga
 
 // feturedCostummer 

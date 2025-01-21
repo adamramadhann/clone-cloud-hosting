@@ -3,7 +3,7 @@ import { CiSquareQuestion } from 'react-icons/ci'
 import { GrServerCluster } from 'react-icons/gr'
 import { FaCode } from 'react-icons/fa'
 import { PiBookBold } from 'react-icons/pi'
-import LayoutScreen from '../../LayoutScreen'
+import LayoutScreen from '../../../LayoutScreen'
 
 
 const InsightRecourcesIconMenu = () => {

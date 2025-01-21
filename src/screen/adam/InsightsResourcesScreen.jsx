@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import InsightRecources from '../components/adam/InsightsResources/InsightRecourcesBg';
-import InsightRecourcesIconMenu from '../components/adam/InsightsResources/InsightRecourcesIconMenu';
-import FeaturedCustomer from '../components/adam/FeaturedCstmr/FeaturedCustomer';
-import BuildForBusines from '../components/adam/buildForBusines/BuildForBusines';
-import ControlPanelApi from '../components/adam/controlPanelApi/ControlPanelApi';
+import ControlPanelApi from '../../components/adam/stickySection/controlPanelApi/ControlPanelApi';
+import InsightRecources from '../../components/adam/stickySection/InsightsResources/InsightRecourcesBg';
+import InsightRecourcesIconMenu from '../../components/adam/stickySection/InsightsResources/InsightRecourcesIconMenu';
+import BuildForBusines from '../../components/adam/stickySection/buildForBusines/BuildForBusines';
+import FeaturedCustomer from '../../components/adam/stickySection/FeaturedCstmr/FeaturedCustomer';
 
 const sections = [
   { id: 'controlPanel', label: 'CONTROL PANEL & API', component: <ControlPanelApi /> },
@@ -27,17 +27,14 @@ const InsightsResourcesScreen = () => {
     const navbarTop = navbar.offsetTop;
 
     const handleScroll = () => {
-      // Update scroll state
       setHasScrolled(window.scrollY > 0);
-      
-      // Handle sticky state
       setIsSticky(window.scrollY > navbarTop);
 
-      // Handle active section
-      const scrollPosition = window.scrollY + window.innerHeight / 3; // Adjusted trigger point
+      
+      const scrollPosition = window.scrollY + window.innerHeight / 3; 
       let currentSection = '';
       
-      // Find the current section based on scroll position
+      
       for (const section of sections) {
         const element = document.getElementById(section.id);
         if (element) {
@@ -52,7 +49,7 @@ const InsightsResourcesScreen = () => {
         }
       }
 
-      // Only set active section if we've scrolled or if it's not the control panel
+      
       if (hasScrolled || currentSection !== 'controlPanel') {
         setActiveSection(currentSection);
       } else {
@@ -62,7 +59,7 @@ const InsightsResourcesScreen = () => {
 
     window.addEventListener('scroll', handleScroll);
     
-    // Initial check without setting active section for control panel
+    
     setIsSticky(window.scrollY > navbarTop);
     setHasScrolled(window.scrollY > 0);
 
@@ -71,10 +68,7 @@ const InsightsResourcesScreen = () => {
 
   return (
     <>
-      {/* Fixed height spacer */}
       <div className="h-16"/>
-      
-      {/* Navigation */}
       <div 
         id="sticky-nav"
         className={`${
@@ -94,8 +88,6 @@ const InsightsResourcesScreen = () => {
                   : ''
               }`}
               onClick={() => {
-                // When clicking a link, immediately set it as active
-                // unless it's Control Panel API and we haven't scrolled
                 if (section.id !== 'controlPanel' || hasScrolled) {
                   setActiveSection(section.id);
                 }
@@ -106,7 +98,6 @@ const InsightsResourcesScreen = () => {
           ))}
         </div>
       </div>
-
       {/* Sections */}
       <div className="w-full -mt-32">
         {sections.map((section) => (

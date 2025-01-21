@@ -1,9 +1,9 @@
 import React from 'react'
-import Footer from './screen/Footer'
-import InsightsResourcesScreen from './screen/InsightsResourcesScreen'
 import Navbar from './components/navbar/Navbar'
 import MainSection from './screen/angga/MainSection'
 import SecondSection from './screen/angga/SecondSection'
+import Footer from './screen/adam/Footer'
+import InsightsResourcesScreen from './screen/adam/InsightsResourcesScreen'
 
 
 const App = () => {

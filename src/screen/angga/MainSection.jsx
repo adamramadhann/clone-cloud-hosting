@@ -1,5 +1,5 @@
 import React from 'react'
-import { bannerPromo } from '../../importGambar'
+import { bannerPromo } from '../../importGambar.js'
 import LayoutScreen from '../../components/LayoutScreen'
 import { FaCircleCheck } from 'react-icons/fa6'
 import Card from '../../components/angga/section1/Card'

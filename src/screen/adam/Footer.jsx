@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../importGambar';
 import { FaFacebook, FaLinkedinIn, FaPinterestP, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
-import LayoutScreen from '../components/LayoutScreen';
-import AccordionsFooter from '../components/adam/AccordionsFooter';
+import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../../importGambar.js';
+import LayoutScreen from '../../components/LayoutScreen';
+import AccordionsFooter from '../../components/adam/footerComponent/AccordionsFooter';
 
 const Footer = () => {
+
   const imageCopyRigth = [
     {   urlImage: footerBsi1 },
     {   urlImage: footerBsi2 },
@@ -13,28 +14,14 @@ const Footer = () => {
     {   urlImage: footerId },
     {   urlImage: footerLogolokal },
   ];
-
   const icon = [
-    {
-      icon : <FaFacebook size={15} />
-    },
-    {
-      icon : <RiInstagramFill size={15} />
-    },
-    {
-      icon : <FaLinkedinIn size={15} />
-    },
-    {
-      icon : <FaYoutube size={15} />
-    },
-    {
-      icon : <FaTwitter size={15} />
-    },
-    {
-      icon : <FaPinterestP size={15} />
-    },
+    { icon : <FaFacebook size={15} /> },
+    { icon : <RiInstagramFill size={15} /> },
+    { icon : <FaLinkedinIn size={15} />}, 
+    { icon : <FaYoutube size={15} />},
+    { icon : <FaTwitter size={15} /> },
+    { icon : <FaPinterestP size={15} /> },
   ]
-
   const dataMenuFooter = [
     {
       judul: 'Service',
@@ -49,10 +36,6 @@ const Footer = () => {
       menus: ['Pembayaran', 'Status Server', 'Promo', 'Panduan', 'Blog'],
     },
   ]
-
-  console.log(imageCopyRigth)
-
-
 
   return (
     <LayoutScreen>
@@ -91,10 +74,8 @@ const Footer = () => {
          }
          </section>
       </section>
-
       <h1 className='text-sm font-bold mt-8 mb-3 ' >Accepted Payment Method</h1>
       <img src={payment} className='w-[1000px] mb-28 ' alt="" />
-
       <section className=" mx-auto flex mt-10 items-center justify-between">
         <p className="text-gray-600 text-base text-center ">
           2015 - 2024 © PT Cloud Hosting Indonesia

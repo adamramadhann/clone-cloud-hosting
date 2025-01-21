@@ -1,5 +1,5 @@
 import React from 'react'
-import { bannerCustomer } from '../../../importGambar'
+import { bannerCustomer } from '../../../importGambar.js'
 
 const Card2 = () => {
   return (

@@ -30,19 +30,19 @@ const Navbar = ({ styling }) => {
                     <button className="flex items-center group-hover:text-blue-200 group-hover:underline group-focus:underline underline-offset-[16px] decoration-2">
                         Solusi 
                     </button>
-                    <NavbarCard titleCard='edukasi' descCard='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae.' titlePromo='cutomer' descPromo='Solusi layanan terbaik untuk Anda! Bersama IDCloudHost, Temukan solusi yang tepat untuk mengembangkan bisnis Anda dalam berbagai bidang yang berbeda. Mari simak testimoni dari para pelanggan unggulan untuk layanan IDCloudHost!'/>
+                    <NavbarCard styling='-left-[560px]' titleCard='edukasi' descCard='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae.' titlePromo='cutomer' descPromo='Solusi layanan terbaik untuk Anda! Bersama IDCloudHost, Temukan solusi yang tepat untuk mengembangkan bisnis Anda dalam berbagai bidang yang berbeda. Mari simak testimoni dari para pelanggan unggulan untuk layanan IDCloudHost!'/>
                 </div>
                 <div className="group relative">
                     <button className="flex items-center group-hover:text-blue-200 group-hover:underline group-focus:underline underline-offset-[16px] decoration-2">
                         Program
                     </button>
-                    <NavbarCard titleCard='affiliate' descCard='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae.' titlePromo='partnership and sponsorship' descPromo='Solusi layanan terbaik untuk Anda! Bersama IDCloudHost, Temukan solusi yang tepat untuk mengembangkan bisnis Anda dalam berbagai bidang yang berbeda. Mari simak testimoni dari para pelanggan unggulan untuk layanan IDCloudHost!'/>
+                    <NavbarCard styling='-left-[640px]' titleCard='affiliate' descCard='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae.' titlePromo='partnership and sponsorship' descPromo='Solusi layanan terbaik untuk Anda! Bersama IDCloudHost, Temukan solusi yang tepat untuk mengembangkan bisnis Anda dalam berbagai bidang yang berbeda. Mari simak testimoni dari para pelanggan unggulan untuk layanan IDCloudHost!'/>
                 </div>
                 <div className="group relative">
                     <button className="flex items-center group-hover:text-blue-200 group-hover:underline group-focus:underline underline-offset-[16px] decoration-2">
                         Bantuan
                     </button>
-                    <NavbarCard titleCard='panduan / tutorial' descCard='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae.' titlePromo='bantuan cs 24/7' descPromo='Solusi layanan terbaik untuk Anda! Bersama IDCloudHost, Temukan solusi yang tepat untuk mengembangkan bisnis Anda dalam berbagai bidang yang berbeda. Mari simak testimoni dari para pelanggan unggulan untuk layanan IDCloudHost!'/>
+                    <NavbarCard styling='-left-[740px]' titleCard='panduan / tutorial' descCard='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae.' titlePromo='bantuan cs 24/7' descPromo='Solusi layanan terbaik untuk Anda! Bersama IDCloudHost, Temukan solusi yang tepat untuk mengembangkan bisnis Anda dalam berbagai bidang yang berbeda. Mari simak testimoni dari para pelanggan unggulan untuk layanan IDCloudHost!'/>
                 </div>
                 <div className="group relative">
                     <button className="flex items-center group-hover:text-blue-200 group-hover:underline group-focus:underline underline-offset-[16px] decoration-2">
@@ -57,7 +57,7 @@ const Navbar = ({ styling }) => {
                     <IoChevronDown />
                 </button>
 
-                <div className="w-44 h-52 hidden group-hover:block bg-white fixed top-[68px] right-[280px] z-50 shadow-md text-zinc-500 text-base ">
+                <div className="w-44 h-52 hidden group-hover:block bg-white fixed top-[68px] right-[180px] z-50 shadow-lg text-zinc-500 text-base ">
                     <div className="w-full h-full flex flex-col items-start justify-evenly py-2 px-6 gap-5">
                         <a href="#" className='hover:underline underline-offset-4 decoration-[#3093FB] decoration-2'>
                             Client Area

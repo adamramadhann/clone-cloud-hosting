@@ -6,234 +6,166 @@ import {
   FaWordpressSimple
 } from 'react-icons/fa';
 import { SiMariadbfoundation, SiMoodle, SiPlesk } from 'react-icons/si';
+import { aapanelsec1, cpanelsec1, cyberpanelsec1, dapodiksec1, dockersec1, haproxysec1, mailcoachsec1, mariaDBsec1, mikrotiksec1, moodlesec1, nodejssec1, plesksec1, webuzosec1, wordpresssec1 } from '../../../../importGambar.js';
 
 const images = [
   {
-    id: 'wordpress',
+    id: 1,
     name: 'Wordpress',
-    Icon: FaWordpressSimple
+    img: wordpresssec1
   },
   {
-    id: 'moodle',
+    id: 2,
     name: 'Moodle',
-    Icon: SiMoodle
+    img: moodlesec1
   },
   {
-    id: 'docker',
+    id: 3,
     name: 'Docker',
-    Icon: FaDocker
+    img: dockersec1
   },
   {
-    id: 'nodejs',
+    id: 4,
     name: 'NodeJS',
-    Icon: FaNodeJs
+    img: nodejssec1
   },
   {
-    id: 'plesk',
-    name: 'Plesk',
-    Icon: SiPlesk
+    id: 5,
+    name: 'CyberPanel',
+    img: cyberpanelsec1
   },
   {
-    id: 'cpanel',
+    id: 6,
     name: 'CPanel',
-    Icon: FaCpanel
+    img: cpanelsec1
   },
   {
-    id: 'mariadb',
-    name: 'MaridaDB',
-    Icon: SiMariadbfoundation
+    id: 7,
+    name: 'Plesk',
+    img: plesksec1
   },
   {
-    id: 'wordpress',
+    id: 8,
+    name: 'MailCoach',
+    img: mailcoachsec1
+  },
+  {
+    id: 9,
+    name: 'Dapodik',
+    img: dapodiksec1
+  },
+  {
+    id: 10,
+    name: 'MariaDB',
+    img: mariaDBsec1
+  },
+  {
+    id: 11,
+    name: 'Webuzo',
+    img: webuzosec1
+  },
+  {
+    id: 12,
+    name: 'Mikrotik',
+    img: mikrotiksec1
+  },
+  {
+    id: 13,
+    name: 'HAProxy',
+    img: haproxysec1
+  },
+  {
+    id: 14,
+    name: 'AaPanel',
+    img: aapanelsec1
+  },
+  {
+    id: 15,
     name: 'Wordpress',
-    Icon: FaWordpressSimple
+    img: wordpresssec1
   },
   {
-    id: 'moodle',
+    id: 2,
     name: 'Moodle',
-    Icon: SiMoodle
+    img: moodlesec1
   },
   {
-    id: 'docker',
+    id: 3,
     name: 'Docker',
-    Icon: FaDocker
+    img: dockersec1
   },
   {
-    id: 'nodejs',
+    id: 4,
     name: 'NodeJS',
-    Icon: FaNodeJs
+    img: nodejssec1
   },
   {
-    id: 'plesk',
-    name: 'Plesk',
-    Icon: SiPlesk
+    id: 5,
+    name: 'CyberPanel',
+    img: cyberpanelsec1
   },
   {
-    id: 'cpanel',
+    id: 6,
     name: 'CPanel',
-    Icon: FaCpanel
+    img: cpanelsec1
   },
   {
-    id: 'mariadb',
-    name: 'MaridaDB',
-    Icon: SiMariadbfoundation
-  },
-  {
-    id: 'wordpress',
-    name: 'Wordpress',
-    Icon: FaWordpressSimple
-  },
-  {
-    id: 'moodle',
-    name: 'Moodle',
-    Icon: SiMoodle
-  },
-  {
-    id: 'docker',
-    name: 'Docker',
-    Icon: FaDocker
-  },
-  {
-    id: 'nodejs',
-    name: 'NodeJS',
-    Icon: FaNodeJs
-  },
-  {
-    id: 'plesk',
+    id: 7,
     name: 'Plesk',
-    Icon: SiPlesk
+    img: plesksec1
   },
   {
-    id: 'cpanel',
-    name: 'CPanel',
-    Icon: FaCpanel
+    id: 8,
+    name: 'MailCoach',
+    img: mailcoachsec1
   },
   {
-    id: 'mariadb',
-    name: 'MaridaDB',
-    Icon: SiMariadbfoundation
+    id: 9,
+    name: 'Dapodik',
+    img: dapodiksec1
   },
   {
-    id: 'wordpress',
-    name: 'Wordpress',
-    Icon: FaWordpressSimple
+    id: 10,
+    name: 'MariaDB',
+    img: mariaDBsec1
   },
   {
-    id: 'moodle',
-    name: 'Moodle',
-    Icon: SiMoodle
+    id: 11,
+    name: 'Webuzo',
+    img: webuzosec1
   },
   {
-    id: 'docker',
-    name: 'Docker',
-    Icon: FaDocker
+    id: 12,
+    name: 'Mikrotik',
+    img: mikrotiksec1
   },
   {
-    id: 'nodejs',
-    name: 'NodeJS',
-    Icon: FaNodeJs
+    id: 13,
+    name: 'HAProxy',
+    img: haproxysec1
   },
   {
-    id: 'plesk',
-    name: 'Plesk',
-    Icon: SiPlesk
-  },
-  {
-    id: 'cpanel',
-    name: 'CPanel',
-    Icon: FaCpanel
-  },
-  {
-    id: 'mariadb',
-    name: 'MaridaDB',
-    Icon: SiMariadbfoundation
-  },
-  {
-    id: 'wordpress',
-    name: 'Wordpress',
-    Icon: FaWordpressSimple
-  },
-  {
-    id: 'moodle',
-    name: 'Moodle',
-    Icon: SiMoodle
-  },
-  {
-    id: 'docker',
-    name: 'Docker',
-    Icon: FaDocker
-  },
-  {
-    id: 'nodejs',
-    name: 'NodeJS',
-    Icon: FaNodeJs
-  },
-  {
-    id: 'plesk',
-    name: 'Plesk',
-    Icon: SiPlesk
-  },
-  {
-    id: 'cpanel',
-    name: 'CPanel',
-    Icon: FaCpanel
-  },
-  {
-    id: 'mariadb',
-    name: 'MaridaDB',
-    Icon: SiMariadbfoundation
-  },
-  {
-    id: 'wordpress',
-    name: 'Wordpress',
-    Icon: FaWordpressSimple
-  },
-  {
-    id: 'moodle',
-    name: 'Moodle',
-    Icon: SiMoodle
-  },
-  {
-    id: 'docker',
-    name: 'Docker',
-    Icon: FaDocker
-  },
-  {
-    id: 'nodejs',
-    name: 'NodeJS',
-    Icon: FaNodeJs
-  },
-  {
-    id: 'plesk',
-    name: 'Plesk',
-    Icon: SiPlesk
-  },
-  {
-    id: 'cpanel',
-    name: 'CPanel',
-    Icon: FaCpanel
-  },
-  {
-    id: 'mariadb',
-    name: 'MaridaDB',
-    Icon: SiMariadbfoundation
+    id: 14,
+    name: 'AaPanel',
+    img: aapanelsec1
   },
 ];
 
 const ImageSelector = ({ selectedImage, onSelect }) => {
   return (
     <div className="w-full max-w-[900px] h-56 grid grid-cols-7 gap-3 py-4 px-6 bg-white border border-gray-200 overflow-y-auto no-scrollbar mb-6">
-      {images.map(({ id, Icon }) => (
+      {images.map((item, id) => (
         <button
           key={id}
           onClick={() => onSelect(id)}
-          className={`w-10 h-10 flex items-center justify-center rounded-lg  transition-all duration-100 ease-in-out hover:border-2 ${
+          className={`w-12 h-12 flex items-center justify-center rounded-lg  transition-all duration-100 ease-in-out hover:border-2 ${
             selectedImage === id
               ? 'border-2 border-blue-500 bg-blue-50'
               : 'border-gray-200 hover:border-gray-300'
           }`}
         >
-          <Icon className="w-5 h-5" />
+          {/* <Icon className="w-5 h-5" /> */}
+          <img src={item?.img} alt="" />
         </button>
       ))}
     </div>
