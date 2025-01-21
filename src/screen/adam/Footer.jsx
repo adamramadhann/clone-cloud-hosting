@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaLinkedinIn, FaPinterestP, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
-import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../../importGambar';
+import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../../importGambar.js';
 import LayoutScreen from '../../components/LayoutScreen';
 import AccordionsFooter from '../../components/adam/AccordionsFooter';
 
