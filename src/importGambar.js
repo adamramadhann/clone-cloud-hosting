@@ -1,10 +1,20 @@
 // footer
-export const footerId = 'src/assets/footer/IdCloudFooterakreditasi-partner-1.png'
-export const footerBsi1 = 'src/assets/footer/idCloudFoter-9001.png'
-export const footerBsi2 = 'src/assets/footer/idCloudFoter-9001.png'
-export const footerKominfo = 'src/assets/footer/IdCloudFooterPseKominfo.png'
-export const footerLogolokal = 'src/assets/footer/image.png'
-export const payment = 'src/assets/footer/Screenshot 2024-12-21 at 16.27.30.png'
+import footerId from './assets/footer/IdCloudFooterakreditasi-partner-1.png';
+import footerBsi1 from './assets/footer/idCloudFoter-9001.png';
+import footerBsi2 from './assets/footer/idCloudFoter-9001.png';
+import footerKominfo from './assets/footer/IdCloudFooterPseKominfo.png';
+import footerLogolokal from './assets/footer/image.png';
+import payment from './assets/footer/Screenshot 2024-12-21 at 16.27.30.png';
+
+
+export {
+    footerId,
+    footerBsi1,
+    footerBsi2,
+    footerKominfo,
+    footerLogolokal,
+    payment,
+  };
 
 // navbar
 export const logoIdCloud = 'src/assets/navbar/logo-idcloud.svg'
