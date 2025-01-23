@@ -83,9 +83,9 @@ const AccordionsFooter = () => {
   >
     {deskripsi.map((val) => (
       <span key={val.judul} className="flex flex-col">
-        <p className="text-[#65686D] text-lg font-bold">{val.judul}</p>
+        <p className="text-[#65686D] text-lg text-justify font-bold">{val.judul}</p>
         <p
-          className="text-[#8592A4] text-base "
+          className="text-[#8592A4] text-sm text-justify sm:text-base "
           dangerouslySetInnerHTML={{ __html: val.deskripsi }}
         />
       </span>
