@@ -72,7 +72,7 @@ const InsightsResourcesScreen = () => {
   return (
     <>
       {/* Fixed height spacer */}
-      <div className="h-16"/>
+      <div className="h-16 "/>
       
       {/* Navigation */}
       <div 
