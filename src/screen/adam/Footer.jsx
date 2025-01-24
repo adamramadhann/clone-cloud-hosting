@@ -96,12 +96,9 @@ const Footer = () => {
       </ul>
     ))}
   </section>
-</section>
-
-
+  </section>
       <h1 className='text-sm font-bold mt-8 mb-3 ' >Accepted Payment Method</h1>
       <img src={payment} className='w-[1000px] mb-28 ' alt="" />
-
       <section className=" mx-auto flex flex-wrap mt-10 items-center sm:justify-between">
         <p className="text-gray-600 text-base text-center ">
           2015 - 2024 © PT Cloud Hosting Indonesia
