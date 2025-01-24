@@ -13,11 +13,11 @@ const InsightRecources = () => {
     }
   }
   return (
-    <section className="bg-[#101F43]  relative bottom-10 h-[700px] flex flex-col justify-center w-full " style={{ borderRadius: "50% 50% 0 0 / 15% 15% 0 0" }}>
+    <section className="bg-[#101F43]  relative bottom-10 h-[1300px] sm:h-[700px] flex flex-col justify-center w-full rounded-[150%_150%_0_0/_15%_15%_0_0] sm:rounded-[50%_50%_0_0/_15%_15%_0_0] ">
       <LayoutScreen>
           <div className="w-full relative flex gap-10">
             {/* Kolom Kiri */}
-            <div className="w-[700px] flex flex-col gap-5 text-white">
+            <div className="w-[700px] flex flex-col gap-16 sm:gap-5 text-white">
               <h1 className="text-transparent tracking-wide bg-clip-text bg-gradient-to-b font-bold text-5xl to-[#EB6BD0] from-[#F09B6B]">
                 Solusi Sempurna untuk Bisnis Anda
               </h1>
@@ -25,18 +25,18 @@ const InsightRecources = () => {
                 Dalam Waktu 3 Menit, Anda akan mendapatkan semua layanan dengan cepat.
                 Tidak ada kewajiban untuk upgrade, downgrade atau cancel setiap waktu
               </p>
-              <span className="flex items-center gap-4">
-                <button className=" w-[192px] h-12 text-white hover:text-black bg-blue-400 rounded-md">
+              <span className="flex items-center flex-col sm:flex-row  gap-4">
+                <button className=" sm:w-[192px] w-full h-12 text-white hover:text-black bg-blue-400 rounded-md">
                   Buat Private Cloud
                 </button>
-                <button className="outline outline-2 bg-gray-400/30 rounded-md w-[162px] h-12 outline-white text-white hover:text-black">
+                <button className="outline outline-2 bg-gray-400/30 rounded-md w-full sm:w-[162px] h-12 outline-white text-white hover:text-black">
                   Hubungi Kami
                 </button>
               </span>
             </div>
             {/* Kolom Kanan */}
-            <div className=" -bottom-[420px] -right-2 relative px-8 flex flex-col gap-2 z-20 justify-center w-[493px] h-[134px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
-                <h1 className='text-sm z-50 text-white' >subcribe here to get update</h1>
+            <div className=" sm:-bottom-[420px] -bottom-[420px] absolute  sm:right-16 sm:relative px-8 flex flex-col gap-2 z-20 justify-center w-[320px] sm:w-[493px] sm:h-[134px] sm:left-0 left-1/2 sm:translate-x-0 -translate-x-1/2 h-[100px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
+                <h1 className=' text-xs sm:text-sm z-50 text-white' >subcribe here to get update</h1>
                 <span className='flex  z-50 justify-between gap-2 w-full' >
                 <input
                 value={email}
@@ -47,11 +47,11 @@ const InsightRecources = () => {
                   placeholder='Enter email address..'
 
                 />
-                <button onClick={handleINput} className='w-[132px] h-12 z-50 flex items-center justify-center bg-white/30 text-base border border-white text-white rounded-md' >SUBCRIBE</button>
+                <button onClick={handleINput} className='w-[132px] h-12 z-50 flex items-center justify-center bg-white/30 text-xs sm:text-base border border-white text-white rounded-md' >SUBCRIBE</button>
                 </span>
             </div>
           </div>
-          <img src="src/assets/image.png" className='absolute z-0 right-[325px] top-[220px]' alt="" />
+          <img src="src/assets/image.png" className='absolute z-0 right-12 -bottom-1  w-[290px] h-[290px] sm:w-[490px] sm:h-[490px]  sm:right-[300px] sm:top-[220px]' alt="" />
       </LayoutScreen>
     </section>
   );

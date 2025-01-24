@@ -83,7 +83,9 @@ import costumers3 from './assets/featuredCostumers/Screenshot 2024-12-22 at 12.0
 
 
 // controler api
-import controlerApi from './assets/Screenshot 2024-12-22 at 15.50.20.png';
+import controlerApiTop from './assets/conrolerApi/image.png';
+import controlerApiCenter from './assets/conrolerApi/image copy.png';
+import controlerApiBottom from './assets/conrolerApi/image copy 2.png';
 
 export {
   // footer
@@ -169,5 +171,9 @@ export {
   costumers1,
   costumers2,
   costumers3,
-  controlerApi
+
+  // controler api
+  controlerApiTop,
+  controlerApiCenter,
+  controlerApiBottom
 };
