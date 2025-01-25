@@ -27,17 +27,11 @@ const InsightsResourcesScreen = () => {
     const navbarTop = navbar.offsetTop;
 
     const handleScroll = () => {
-      // Update scroll state
       setHasScrolled(window.scrollY > 0);
-      
-      // Handle sticky state
       setIsSticky(window.scrollY > navbarTop);
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
 
-      // Handle active section
-      const scrollPosition = window.scrollY + window.innerHeight / 3; // Adjusted trigger point
       let currentSection = '';
-      
-      // Find the current section based on scroll position
       for (const section of sections) {
         const element = document.getElementById(section.id);
         if (element) {
@@ -52,7 +46,6 @@ const InsightsResourcesScreen = () => {
         }
       }
 
-      // Only set active section if we've scrolled or if it's not the control panel
       if (hasScrolled || currentSection !== 'controlPanel') {
         setActiveSection(currentSection);
       } else {
@@ -71,10 +64,8 @@ const InsightsResourcesScreen = () => {
 
   return (
     <>
-      {/* Fixed height spacer */}
       <div className="h-16 "/>
       
-      {/* Navigation */}
       <div 
         id="sticky-nav"
         className={`${
@@ -88,14 +79,12 @@ const InsightsResourcesScreen = () => {
             <a
               key={section.id}
               href={`#${section.id}`}
-              className={`text-gray-800 hover:text-white hover:rounded-full hover:px-3 hover:py-2 hover:bg-gradient-to-r from-[#FDA14D] to-[#FD4DF6] font-semibold text-lg tracking-wider transition-all duration-300 ${
+              className={`text-gray-800 hover:text-white hover:rounded-full hover:px-3 hover:py-2 hover:bg-gradient-to-r from-[#FDA14D] to-[#FD4DF6] font-semibold text-sm sm:text-lg tracking-wider transition-all duration-300 ${
                 activeSection === section.id 
-                  ? 'text-white rounded-full px-3 py-2 bg-gradient-to-r from-[#FDA14D] to-[#FD4DF6]' 
+                  ? 'sm:text-white sm:rounded-full sm:px-3 sm:py-2 sm:bg-gradient-to-r from-[#FDA14D] to-[#FD4DF6]' 
                   : ''
               }`}
               onClick={() => {
-                // When clicking a link, immediately set it as active
-                // unless it's Control Panel API and we haven't scrolled
                 if (section.id !== 'controlPanel' || hasScrolled) {
                   setActiveSection(section.id);
                 }
@@ -107,7 +96,6 @@ const InsightsResourcesScreen = () => {
         </div>
       </div>
 
-      {/* Sections */}
       <div className="w-full -mt-32">
         {sections.map((section) => (
           <div 

@@ -15,10 +15,10 @@ const InsightRecources = () => {
   return (
     <section className="bg-[#101F43]  relative bottom-10 h-[1300px] sm:h-[700px] flex flex-col justify-center w-full rounded-[150%_150%_0_0/_15%_15%_0_0] sm:rounded-[50%_50%_0_0/_15%_15%_0_0] ">
       <LayoutScreen>
-          <div className="w-full relative flex gap-10">
+          <div className="w-full relative  flex gap-10">
             {/* Kolom Kiri */}
-            <div className="w-[700px] flex flex-col gap-16 sm:gap-5 text-white">
-              <h1 className="text-transparent tracking-wide bg-clip-text bg-gradient-to-b font-bold text-5xl to-[#EB6BD0] from-[#F09B6B]">
+            <div className="w-[700px]  flex flex-col gap-16 sm:gap-5 text-white">
+              <h1 className="text-transparent -mt-20 sm:mt-20 tracking-wide bg-clip-text bg-gradient-to-b font-bold text-5xl to-[#EB6BD0] from-[#F09B6B]">
                 Solusi Sempurna untuk Bisnis Anda
               </h1>
               <p className="text-lg">
@@ -35,7 +35,7 @@ const InsightRecources = () => {
               </span>
             </div>
             {/* Kolom Kanan */}
-            <div className=" sm:-bottom-[420px] -bottom-[420px] absolute  sm:right-16 sm:relative px-8 flex flex-col gap-2 z-20 justify-center w-[320px] sm:w-[493px] sm:h-[134px] sm:left-0 left-1/2 sm:translate-x-0 -translate-x-1/2 h-[100px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
+            <div className=" sm:-bottom-[420px] -bottom-[450px] absolute  sm:right-16 sm:relative px-8 flex flex-col gap-2 z-20 justify-center w-[320px] sm:w-[493px] sm:h-[134px] sm:left-0 left-1/2 sm:translate-x-0 -translate-x-1/2 h-[100px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
                 <h1 className=' text-xs sm:text-sm z-50 text-white' >subcribe here to get update</h1>
                 <span className='flex  z-50 justify-between gap-2 w-full' >
                 <input
