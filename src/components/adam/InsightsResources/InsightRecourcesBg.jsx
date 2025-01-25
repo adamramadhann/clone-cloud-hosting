@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LayoutScreen from '../../LayoutScreen';
+import { user } from '../../../importGambar';
 
 const InsightRecources = () => {
 
@@ -13,7 +14,7 @@ const InsightRecources = () => {
     }
   }
   return (
-    <section className="bg-[#101F43]  relative bottom-10 h-[1300px] sm:h-[700px] flex flex-col justify-center w-full rounded-[150%_150%_0_0/_15%_15%_0_0] sm:rounded-[50%_50%_0_0/_15%_15%_0_0] ">
+    <section className="bg-[#101F43]  relative bottom-10 h-[1300px] sm:h-[700px] flex flex-col justify-center w-full rounded-[250%_250%_0_0/_15%_15%_0_0] sm:rounded-[50%_50%_0_0/_15%_15%_0_0] ">
       <LayoutScreen>
           <div className="w-full relative  flex gap-10">
             {/* Kolom Kiri */}
@@ -51,7 +52,7 @@ const InsightRecources = () => {
                 </span>
             </div>
           </div>
-          <img src="src/assets/image.png" className='absolute z-0 right-12 -bottom-1  w-[290px] h-[290px] sm:w-[490px] sm:h-[490px]  sm:right-[300px] sm:top-[220px]' alt="" />
+          <img src={user} className='absolute z-0 right-12 -bottom-1  w-[290px] h-[290px] sm:w-[490px] sm:h-[490px]  sm:right-[300px] sm:top-[220px]' alt="" />
       </LayoutScreen>
     </section>
   );

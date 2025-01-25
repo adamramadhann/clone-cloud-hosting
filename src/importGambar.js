@@ -87,7 +87,11 @@ import controlerApiTop from './assets/conrolerApi/image.png';
 import controlerApiCenter from './assets/conrolerApi/image copy.png';
 import controlerApiBottom from './assets/conrolerApi/image copy 2.png';
 
+import user from './assets/image.png';
+
 export {
+  user,
+
   // footer
   footerId,
   footerBsi1,

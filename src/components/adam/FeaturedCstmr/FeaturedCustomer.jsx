@@ -53,7 +53,7 @@ const FeaturedCustomer = () => {
           <h1 className="sm:text-6xl text-5xl w-[300px] sm:w-full font-bold pb-20 text-center ">Featured Customer</h1>
           <div 
             style={{ boxShadow: '6px 40px 45px rgba(0, 0, 0, 0.027)' }} 
-            className="w-[1165px] rounded-lg bg-white overflow-hidden p-5 max-h-[400px] flex flex-col justify-center items-center"
+            className="w-[1165px] rounded-lg sm:bg-white overflow-hidden p-5 max-h-[400px] flex flex-col justify-center items-center"
           >
             <div className='w-full overflow-hidden h-[300px] px-10 flex items-center justify-center flex-col bg-slate-100/10' >
               
@@ -61,7 +61,7 @@ const FeaturedCustomer = () => {
               {visibleImages.slice(0, 9).map((image, index) => (
                 <div
                   key={`row1-${index}`}
-                  className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg transform -translate-y-2"
+                  className="bg-white w-24 h-24 px-4 py-2 shadow-[0_0_15px_rgba(0,0,0,0.2)] sm:shadow-lg rounded-lg transform -translate-y-2"
                 >
                   <img
                     src={image.img}
@@ -71,11 +71,11 @@ const FeaturedCustomer = () => {
                 </div>
               ))}
             </div>
-            <div className="grid sm:grid-cols-9 grid-cols-2 mr-5 p-5 gap-20 overflow-hidden ">
+            <div className="grid sm:grid-cols-9  grid-cols-2 mr-5 p-5 gap-20 overflow-hidden ">
               {visibleImages.slice(9, 18).map((image, index) => (
                 <div
                   key={`row2-${index}`}
-                  className="bg-white w-24 h-24 px-4 py-2 shadow-lg rounded-lg transform translate-y-2"
+                  className="bg-white w-24 h-24 px-4 py-2 shadow-[0_0_15px_rgba(0,0,0,0.2)]  sm:shadow-lg rounded-lg transform translate-y-2"
                 >
                   <img
                     src={image.img}

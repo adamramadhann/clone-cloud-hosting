@@ -77,7 +77,7 @@ const Footer = () => {
         </span>
       ))}
     </section>
-    <p className="text-gray-400 mb-16 sm:-mb-16 mt-5 text-sm">
+    <p className="text-gray-400 mb-10 sm:-mb-16 mt-5 text-sm">
       Tim Support Kami siap membantu anda selama 24 jam. Hubungi{' '}
       <a className="text-blue-500 cursor-pointer">Tim Support</a>
     </p>
@@ -100,11 +100,11 @@ const Footer = () => {
       <h1 className='text-sm font-bold mt-8 mb-3 ' >Accepted Payment Method</h1>
       <img src={payment} className='w-[1000px] mb-28 ' alt="" />
       <section className=" mx-auto flex flex-wrap mt-10 items-center sm:justify-between">
-        <p className="text-gray-600 text-base text-center ">
+        <p className="text-gray-600 text-sm sm:text-base text-center ">
           2015 - 2024 © PT Cloud Hosting Indonesia
         </p>
         <section className="flex items-center flex-wrap  gap-4">
-          <h2 className="text-gray-800 text-base font-semibold">
+          <h2 className="text-gray-800 text-sm sm:text-base font-semibold">
             AKREDITASI & PARTNER
           </h2>
           <div className="flex  flex-wrap items-center gap-7">
@@ -113,7 +113,7 @@ const Footer = () => {
                 key={index}
                 src={val.urlImage}
                 alt="Footer Accreditation or Partner Logo"
-                className="w-22 h-10 object-contain"
+                className="sm:w-22 w-20 h-5 sm:h-10 object-contain"
               />
             ))}
           </div>
