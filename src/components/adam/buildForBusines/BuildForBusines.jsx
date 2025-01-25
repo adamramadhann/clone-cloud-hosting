@@ -38,7 +38,7 @@ const BuildForBusines = () => {
   return (
     <LayoutScreen>
             <section id="buildForBusines"  className=' flex items-center justify-center flex-col h-full  ' >
-                <h1 className='text-6xl h-[120px] text-transparent bg-clip-text text-center tracking-wide bg-gradient-to-r to-[#fd4df6] from-[#fda14d] font-bold mb-5' >Built For Business</h1>
+                <h1 className='sm:text-6xl text-5xl h-[120px] text-transparent bg-clip-text text-center tracking-wide bg-gradient-to-r to-[#fd4df6] from-[#fda14d] font-bold mb-5' >Built For Business</h1>
                 <div className='flex w-full  justify-evenly overflow-auto items-center gap-3 sm:gap-1 bg-gradient-to-b from-slate-50/30 to-slate-100/40 sm:w-[1180px] h-[437px] py-3 rounded-lg' >
                 {
                     dataBuild.map((val, index) => (

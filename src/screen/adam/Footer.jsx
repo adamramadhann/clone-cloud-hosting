@@ -66,7 +66,7 @@ const Footer = () => {
 
 
     </p>
-    <h1 className="text-base mt-10 font-semibold">IDCloudHost is also Available in Singapore</h1>
+    <h1 className="text-base mt-12  font-semibold">IDCloudHost is also Available in Singapore</h1>
     <section className="flex gap-4 mt-3 flex-wrap">
       {icon.map((val, index) => (
         <span
@@ -77,18 +77,18 @@ const Footer = () => {
         </span>
       ))}
     </section>
-    <p className="text-gray-400 mt-5 text-sm">
+    <p className="text-gray-400 mb-16 sm:-mb-16 mt-5 text-sm">
       Tim Support Kami siap membantu anda selama 24 jam. Hubungi{' '}
       <a className="text-blue-500 cursor-pointer">Tim Support</a>
     </p>
   </section>
-  <section className="flex flex-wrap md:flex-nowrap w-full text-sm text-gray-400 gap-14">
+  <section className="flex flex-row md:flex-nowrap w-full gap-6 text-sm text-gray-400 sm:gap-14">
     {dataMenuFooter.map((val) => (
-      <ul key={val.judul} className="flex-1 flex flex-col gap-5 text-base mb-5">
+      <ul key={val.judul} className="  flex flex-col gap-5 text-base sm:mb-5">
         <li className="text-black">{val.judul}</li>
         {val.menus.map((e) => (
           <li key={e} className="gap-5">
-            <a href="#" className="hover:text-blue-500 text-base">
+            <a href="#" className="hover:text-blue-500 text-xs sm:text-base">
               {e}
             </a>
           </li>
