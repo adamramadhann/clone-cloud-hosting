@@ -43,7 +43,7 @@ const BuildForBusines = () => {
                 <section className='flex w-full sm:pl-0   items-center sm:gap-1 bg-gradient-to-b from-slate-50/30 to-slate-100/40 sm:w-[1180px] h-[437px] py-3 rounded-lg' >
                 {
                     dataBuild.map((val, index) => (
-                        <div key={index} className='flex flex-none  items-center flex-col gap-8 py-10 px-7 rounded-lg bg-white' > 
+                        <div key={index} className='flex flex-none  items-center flex-col gap-8 py-10 px-9 rounded-lg bg-white' > 
                             <span style={{background : 'linear-gradient(314.65deg,#fd4df6 -.61%,#fda14d 100%)'}} className='w-20 flex items-center justify-center h-20 rounded-full  ' >
                                 {val.icon}
                             </span>
