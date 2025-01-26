@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaLinkedinIn, FaPinterestP, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
-import { footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, payment } from '../../importGambar.js';
+import { alfa, alfaMart, atmBersama, bca, bni, bri, cimbNiaga, footerBsi1, footerBsi2, footerId, footerKominfo, footerLogolokal, indomaret, mandiri, masterCard, myBank, ovo , paypal, permataBank, shopePay, visa } from '../../importGambar.js';
 import LayoutScreen from '../../components/LayoutScreen';
 import AccordionsFooter from '../../components/adam/AccordionsFooter';
 
@@ -33,6 +33,25 @@ const Footer = () => {
     {
       icon : <FaPinterestP size={15} />
     },
+  ]
+
+  const payment = [
+    { pop : alfa },
+    { pop : alfaMart },
+    { pop : atmBersama },
+    { pop : bca },
+    { pop : bni },
+    { pop : bri },
+    { pop : cimbNiaga },
+    { pop : indomaret },
+    { pop : mandiri },
+    { pop : masterCard },
+    { pop : myBank },
+    { pop : ovo },
+    { pop : paypal },
+    { pop : permataBank },
+    { pop : shopePay },
+    { pop : visa },
   ]
 
   const dataMenuFooter = [
@@ -97,8 +116,15 @@ const Footer = () => {
     ))}
   </section>
   </section>
-      <h1 className='text-sm font-bold mt-8 mb-3 ' >Accepted Payment Method</h1>
-      <img src={payment} className='w-[1000px] mb-28 ' alt="" />
+      <h1 className='text-sm font-bold mt-16 mb-3 ' >Accepted Payment Method</h1>
+      {/* <img src={payment} className='w-[1000px] mb-28 ' alt="" /> */}
+      <section className='flex flex-wrap gap-2 ' >
+        {
+          payment.map((val) => (
+              <img src={val.pop} className='h-5 w-10 object-cover' alt="" />
+          ))
+        }
+      </section>
       <section className=" mx-auto flex flex-wrap mt-10 items-center sm:justify-between">
         <p className="text-gray-600 text-sm sm:text-base text-center ">
           2015 - 2024 © PT Cloud Hosting Indonesia

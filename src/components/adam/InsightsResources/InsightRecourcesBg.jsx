@@ -36,24 +36,28 @@ const InsightRecources = () => {
               </span>
             </div>
             {/* Kolom Kanan */}
-            <div className=" sm:-bottom-[420px] -bottom-[450px] absolute  sm:right-16 sm:relative px-8 flex flex-col gap-2 z-20 justify-center w-[320px] sm:w-[493px] sm:h-[134px] sm:left-0 left-1/2 sm:translate-x-0 -translate-x-1/2 h-[100px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
-                <h1 className=' text-xs sm:text-sm z-50 text-white' >subcribe here to get update</h1>
-                <span className='flex  z-50 justify-between gap-2 w-full' >
+          </div>
+      </LayoutScreen>
+      <section className='absolute -bottom-12 sm:-left-[580px] sm:translate-x-1/2  left-1/2 -translate-x-1/2 w-full' >
+      <section className='relative w-full flex flex-col items-center justify-center ' >
+        <img src={user} className=' -z-10 -mb-5   -bottom-5  w-[290px] h-[290px] sm:w-[490px] sm:h-[490px]  sm:right-[300px] sm:top-[220px]' alt="" />
+            <div className="  sm:right-16 z-50 sm: sm:px-8 p-4 flex flex-col gap-2 justify-center w-[320px] sm:w-[493px] sm:h-[134px] sm:left-0 left-1/2 sm:translate-x-0  h-[100px] rounded-xl bg-gradient-to-tl to-[#639DF6] from-[#785BF4] ">
+                <h1 className=' texrelativet-xs sm:text-sm z-50 text-white' >subcribe here to get update</h1>
+                <span className='flex  z-50 justify-between items-center gap-2 w-full' >
                 <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   required
-                  className='w-[283px] h-12 z-50 pl-2 text-base bg-white/30 outline-none border border-white scale-100 focus:scale-100 focus:border-none placeholder:text-white text-white rounded-md'
+                  className='sm:w-[283px] w-[200px] sm:h-12 h-10  z-50 pl-2 text-base bg-white/30 outline-none border border-white scale-100 focus:scale-100 focus:border-none placeholder:text-white text-white rounded-md'
                   placeholder='Enter email address..'
 
                 />
-                <button onClick={handleINput} className='w-[132px] h-12 z-50 flex items-center justify-center bg-white/30 text-xs sm:text-base border border-white text-white rounded-md' >SUBCRIBE</button>
+                <button onClick={handleINput} className='w-[132px] p-2 sm:h-12 h-10 z-50 flex items-center justify-center bg-white/30 text-xs sm:text-base border border-white text-white rounded-md' >SUBCRIBE</button>
                 </span>
             </div>
-          </div>
-          <img src={user} className='absolute z-0 right-12 -bottom-1  w-[290px] h-[290px] sm:w-[490px] sm:h-[490px]  sm:right-[300px] sm:top-[220px]' alt="" />
-      </LayoutScreen>
+      </section>
+      </section>
     </section>
   );
 };

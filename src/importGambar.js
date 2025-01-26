@@ -87,10 +87,48 @@ import controlerApiTop from './assets/conrolerApi/image.png';
 import controlerApiCenter from './assets/conrolerApi/image copy.png';
 import controlerApiBottom from './assets/conrolerApi/image copy 2.png';
 
+
+// payment  
+import alfa from './assets/payment/alfa.png';
+import alfaMart from './assets/payment/alfaMart.png';
+import atmBersama from './assets/payment/atmBersama.png';
+import bca from './assets/payment/bca.png';
+import bni from './assets/payment/bni.png';
+import bri from './assets/payment/bri.png';
+import cimbNiaga from './assets/payment/cimbNiaga.png';
+import indomaret from './assets/payment/indomaret.png';
+import mandiri from './assets/payment/mandiri.png';
+import masterCard from './assets/payment/masterCard.png';
+import myBank from './assets/payment/myBank.png';
+import ovo from './assets/payment/ovo.png';
+import paypal from './assets/payment/payPal.png';
+import permataBank from './assets/payment/permantaBank.png';
+import shopePay from './assets/payment/shopePay.png';
+import visa from './assets/payment/visa.png';
+
+
 import user from './assets/image.png';
 
 export {
   user,
+
+  // payment
+  alfa,
+  alfaMart,
+  atmBersama,
+  bca,
+  bni,
+  bri,
+  cimbNiaga,
+  indomaret,
+  mandiri,
+  masterCard,
+  myBank,
+  ovo,
+  paypal,
+  permataBank,
+  shopePay,
+  visa,
 
   // footer
   footerId,
