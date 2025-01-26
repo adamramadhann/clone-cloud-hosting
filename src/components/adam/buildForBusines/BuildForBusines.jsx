@@ -39,10 +39,11 @@ const BuildForBusines = () => {
     <LayoutScreen>
             <section id="buildForBusines"  className=' flex items-center justify-center flex-col h-full  ' >
                 <h1 className='sm:text-6xl text-5xl h-[120px] text-transparent bg-clip-text text-center tracking-wide bg-gradient-to-r to-[#fd4df6] from-[#fda14d] font-bold mb-5 snap-x snap-mandatory ' >Built For Business</h1>
-                <section className='flex w-full pl-60 sm:pl-0 justify-evenly overflow-auto items-center gap-3 sm:gap-1 bg-gradient-to-b from-slate-50/30 to-slate-100/40 sm:w-[1180px] h-[437px] py-3 rounded-lg' >
+                <section className=' overflow-auto w-full' >
+                <section className='flex w-full sm:pl-0   items-center sm:gap-1 bg-gradient-to-b from-slate-50/30 to-slate-100/40 sm:w-[1180px] h-[437px] py-3 rounded-lg' >
                 {
                     dataBuild.map((val, index) => (
-                        <div key={index} className='flex  items-center flex-col gap-8 py-10 px-4 rounded-lg bg-white' > 
+                        <div key={index} className='flex flex-none  items-center flex-col gap-8 py-10 px-7 rounded-lg bg-white' > 
                             <span style={{background : 'linear-gradient(314.65deg,#fd4df6 -.61%,#fda14d 100%)'}} className='w-20 flex items-center justify-center h-20 rounded-full  ' >
                                 {val.icon}
                             </span>
@@ -54,6 +55,7 @@ const BuildForBusines = () => {
                         </div>
                     ))
                 }
+                </section>
                 </section>
             </section>
     </LayoutScreen>
