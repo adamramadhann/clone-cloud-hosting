@@ -166,7 +166,7 @@ const images = [
 
 const ImageSelector = ({ selectedImage, onSelect }) => {
   return (
-    <div className="w-full max-w-[900px] h-56 grid grid-cols-8 gap-3 py-4 px-6 bg-white border border-gray-200 overflow-y-auto no-scrollbar mb-6">
+    <div className="w-full max-w-[900px] max-sm:grid-cols-4 h-56 grid grid-cols-8 gap-3 py-4 px-6 bg-white border border-gray-200 overflow-y-auto no-scrollbar mb-6">
       {images.map((item, id) => (
         <button
           key={id}
